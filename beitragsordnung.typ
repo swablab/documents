@@ -7,7 +7,7 @@
   changes: (
   [v1.0], [19.10.2020], [erste Fassung],
   [v1.1], [01.04.2023], [
-    - Anpassung Beitragshöhe Födermitglieder (@beitrag[§], Absatz 5)
+    - Anpassung Beitragshöhe Födermitglieder \ (@beitrag[§], Absatz 5)
     - Hinzufügen neue Familienklausel (@beitrag[§], Absatz 2)
   ]),
   doc,
@@ -16,7 +16,7 @@
 // Inhalt
 = Allgemeines
 + Diese Beitragsordnung ist nicht Bestandteil der Satzung. Sie kann nur von der Mitgliederversammlung des Vereins geändert werden.
-+ Beim Ausscheiden aus dem Verein erfolgt keine Rückerstattung bereits geleisteter Beiträge.
++ Beim Ausscheiden aus dem Verein erfolgt keine Rückerstattung bereits geleisteter \ Beiträge.
 
 = Beschlüsse
 Beschlüsse über die Änderung der Beitragsordnung gelten ab dem 1. des auf die Beschlussfassung folgenden Monats. Durch Beschluss der Mitgliederversammlung kann auch ein anderer Termin festgelegt werden.
