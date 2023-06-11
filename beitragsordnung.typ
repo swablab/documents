@@ -1,7 +1,7 @@
 #import "templates/template.typ": tmpl
 
 #show: doc => tmpl(
-  title: [Beitragsordnung],
+  title: "Beitragsordnung",
   version: "v1.1",
   date: "01.04.2023",
   changes: (

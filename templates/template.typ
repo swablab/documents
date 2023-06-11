@@ -8,6 +8,11 @@
   text_font: "Corbel",
   doc,
 ) = {
+set document(
+  title: title,
+  author: "swablab e.V."
+)
+
 set text(
   font: text_font,
   size: 12pt,
@@ -30,7 +35,7 @@ set enum(
 align(center)[
   #image("lightmode-swablab.png", width: 70%)
 
-  #text(1.75em, font: heading_font)[
+  #text(1.75em, font: heading_font, hyphenate: false)[
     #heading(outlined: false)[*#title*]
   ]\
   \
@@ -95,4 +100,5 @@ table(
   [*Version*], [*Änderungsdatum*], [*Änderungen*],
   ..changes
 )
+
 }
