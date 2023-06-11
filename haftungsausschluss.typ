@@ -1,7 +1,12 @@
+#set document(
+  author: "swablab e.V.",
+  title: "Haftungsausschluss"
+)
+
 #set text(
   font: "Corbel",
   size: 12pt,
-  lang: "de"
+  lang: "de",
 )
 
 #set par(justify: true)
@@ -40,8 +45,8 @@
 // Version
 #place(
   top + left,
-  dx: -20em,
-  dy: 17.25em,
+  dx: -19.5em,
+  dy: 17.3em,
   
   rotate(
     90deg,
@@ -49,7 +54,7 @@
     text(
       size: 10pt,
       fill: rgb("9c9c9c"),
-      [swablab e.V. / Haftungsausschluss v1.0 / 30.04.2023]
+      [swablab e.V. / Haftungsausschluss v1.0 / #datetime.today().display("[day].[month].[year]")]
     )
   )
 )
@@ -74,7 +79,7 @@ Bitte leserlich in Druckbuchstaben ausfüllen. Alle Felder sind Pflichtangaben.
 
 // Formular
 #grid(
-  columns: (60pt, auto),
+  columns: (50pt, auto),
   rows: (2em),
   gutter: 0.5em,
   row-gutter: 2em,
@@ -83,31 +88,31 @@ Bitte leserlich in Druckbuchstaben ausfüllen. Alle Felder sind Pflichtangaben.
   stack(
     dir: ltr, 
     spacing: 0.5em,
-    cell(width: 50%)[vorname], 
-    cell(width: 50%)[nachname]
+    cell(width: 50% - 0.25em)[vorname], 
+    cell(width: 50% - 0.25em)[nachname]
   ),
 
   cell_text([Anschrift]),
   stack(
     dir: ltr, 
     spacing: 0.5em,
-    cell(width: 50%)[straße & hausnummer], 
-    cell(width: 50%)[plz & ort],
+    cell(width: 50% - 0.25em)[straße & hausnummer], 
+    cell(width: 50% - 0.25em)[plz & ort],
   ),
 
   cell_text([Kontakt]),
   stack(
     dir: ltr, 
     spacing: 0.5em,
-    cell(width: 50%)[email], 
-    cell(width: 50%)[telefon],
+    cell(width: 50% - 0.25em)[email], 
+    cell(width: 50% - 0.25em)[telefon],
   ),
 
   cell_text([Geburtstag]),
   stack(
     dir: ltr, 
     spacing: 0.5em,
-    cell(width: 50%)[datum],
+    cell(width: 50% - 0.25em)[datum],
   )
 )
 
@@ -120,13 +125,13 @@ Mit meiner Unterschrift willige ich (und ggf. mein Kind, s.u.) in die Speicherun
 Mit meiner Unterschrift akzeptiere ich (und ggf. mein Kind, s.u.) die Allgemeinen Geschäftsbedingungen (AGB). Einsehbar unter #link("https://swablab.de/XYZ")[swablab.de/XYZ] und als Aushang im swablab. \
 
 #strong([Werkstattregeln]) \
-Ich bestätige, dass ich (und ggf. mein Kind, s.u.) die Werkstattregeln zur Kenntnis genommen habe und diese zu befolgen. Eine Ersteinweisung in die Werkstatt habe ich erhalten. \
+Ich bestätige, dass ich (und ggf. mein Kind, s.u.) die Werkstattregeln zur Kenntnis genommen habe und diese befolgen werde. Eine Ersteinweisung in die Werkstatt habe ich erhalten. \
 
 #v(2em)
 
 // Unterschrift
 #grid(
-  columns: (60pt, auto),
+  columns: (50pt, auto),
   rows: (2em),
   gutter: 0.5em,
   row-gutter: 2em,
@@ -135,13 +140,20 @@ Ich bestätige, dass ich (und ggf. mein Kind, s.u.) die Werkstattregeln zur Kenn
   stack(
     dir: ltr,
     spacing: 0.5em,
-    cell(width: 50%)[ort & datum], 
-    cell(width: 50%)[unterschrift (bei minderjährigen der ges. vertr.)]
+    cell(width: 50% - 0.25em)[ort & datum], 
+    cell(width: 50% - 0.25em)[unterschrift (bei minderjährigen der ges. vertr.)]
   ),
 )
 
 #v(2em)
-#rect[
+#block(
+  stroke: 1pt + black,
+  inset: 0.5em,
+[
 #strong([Regelung für Minderjährige]) \
-Mit meiner Unterschrift bestätige ich, .................................................., dass mein Kind ............................................ die Werkstatt des swablab eigenständig und auf eigene bzw. meine Verantwortung und mit meinem Einverständnis nutzen darf. Welche Werkräume und Gerätschaften mein Kind benutzen darf, kläre ich vorab mit meinem Kind. Für die Einhaltung dieser Vereinbarung bin ausschließlich ich in Absprache mit meinem Kind verantwortlich. Die Werkstattbetreiber können und werden NICHT die Aufsicht und Kontrolle dieser Vorgaben übernehmen.
-]
+Mit meiner Unterschrift bestätige ich, 
+#box(height: 0.75em, width: 18em, fill: rgb("e4e5ea"), outset: (y: 3pt)),
+dass mein Kind
+#box(height: 0.75em, width: 18em, fill: rgb("e4e5ea"), outset: (y: 3pt)),
+die Werkstatt des swablab e.V. eigenständig und auf eigene bzw. meine Verantwortung und mit meinem Einverständnis nutzen darf. Welche Werkräume und Gerätschaften mein Kind benutzen darf, kläre ich vorab mit meinem Kind. Für die Einhaltung dieser Vereinbarung bin ausschließlich ich in Absprache mit meinem Kind verantwortlich. Die Werkstattbetreiber können und werden nicht die Aufsicht und Kontrolle dieser Vorgaben übernehmen.
+])

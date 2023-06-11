@@ -35,4 +35,4 @@ Beschlüsse über die Änderung der Beitragsordnung gelten ab dem 1. des auf die
 Im Säumnisfall wird das Mitglied nach einmonatigem Ausbleiben des Beitrags gemahnt. Zahlt ein Mitglied trotz zweifacher Mahnung (in Textform) oder länger als drei Monate den Beitrag nicht, so gilt nach Ablauf eines Monates nach der zweiten Mahnung die Nichtzahlung als Austritt. In der zweiten Mahnung ist auf die Folgen der Nichtzahlung hinzuweisen.
 
 = Stundung
-Auf Antrag kann der Vorstand die Stundung – im Falle sozialer Härten auch den Erlass der Beiträge für höchstens ein Jahr beschließen.
+Auf Antrag kann der Vorstand die Stundung - im Falle sozialer Härten auch den Erlass der Beiträge für höchstens ein Jahr beschließen.
