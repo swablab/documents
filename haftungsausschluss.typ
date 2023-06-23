@@ -71,7 +71,7 @@
   #heading(outlined: false)[*Haftungsauschluss*]
 ]
 
-#v(4em)
+#v(3em)
 
 Bitte leserlich in Druckbuchstaben ausfüllen. Alle Felder sind Pflichtangaben.
 
@@ -119,10 +119,10 @@ Bitte leserlich in Druckbuchstaben ausfüllen. Alle Felder sind Pflichtangaben.
 #v(2em)
 
 #strong([Datenschutzrechtliche Einwilligungserklärung nach DSGVO]) \
-Mit meiner Unterschrift willige ich (und ggf. mein Kind, s.u.) in die Speicherung und Verarbeitung der von mir angegebenen personenbezogenen Daten ein. Diese sind für die Nutzerverwaltung erforderlich. Unsere vollständige Datenschutzerklärung ist unter #link("https://swablab.de/XYZ")[swablab.de/XYZ] einsehbar. \
+Mit meiner Unterschrift willige ich (und ggf. mein Kind, s.u.) in die Speicherung und Verarbeitung der von mir angegebenen personenbezogenen Daten ein. Diese sind für die Nutzerverwaltung erforderlich. Unsere vollständige Datenschutzerklärung ist unter #link("https://swablab.de/docs/datenschutz")[swablab.de/docs/datenschutz] einsehbar. \
 
 #strong([Allgemeinen Geschäftsbedingungen (AGB)]) \
-Mit meiner Unterschrift akzeptiere ich (und ggf. mein Kind, s.u.) die Allgemeinen Geschäftsbedingungen (AGB). Einsehbar unter #link("https://swablab.de/XYZ")[swablab.de/XYZ] und als Aushang im swablab. \
+Mit meiner Unterschrift akzeptiere ich (und ggf. mein Kind, s.u.) die Allgemeinen Geschäftsbedingungen (AGB). Einsehbar unter #link("https://swablab.de/docs/werkstatt-agb")[swablab.de/docs/werkstatt-agb] und als Aushang im swablab. \
 
 #strong([Werkstattregeln]) \
 Ich bestätige, dass ich (und ggf. mein Kind, s.u.) die Werkstattregeln zur Kenntnis genommen habe und diese befolgen werde. Eine Ersteinweisung in die Werkstatt habe ich erhalten. \
