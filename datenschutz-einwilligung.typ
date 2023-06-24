@@ -82,10 +82,10 @@ Vereinsanschrift: swablab e. V., Katharinenstr. 1, 72250 Freudenstadt; E-Mail: #
 == Zweck der Verarbeitung personenbezogener Daten
 - Mitgliederverwaltung und Mitgliederbetreuung
 - Förderung der Ziele des Vereinszwecks
-Rechtsgrundlage: Art. 6 Abs. 1 Ziff. 2 DSGVO
+Rechtsgrundlage: Art. 6 Abs. 1 b\) DSGVO
 
 == Nutzung der personenbezogenen Daten
-Der Verein veröffentlicht Daten seiner Mitglieder unter anderem im Internet (auf seiner Homepage #link("https://swablab.de")[swablab.de]), auf Social Media sowie in Printmedien (wie den Schwarzwälder Boten). Insbesondere werden in obigen Medien auch Bilder von Vereinsveranstaltungen veröffentlicht. Das Mitglied willigt in diese Veröffentlichung ein, Art. 6 Abs. 1 Ziff. 1 DSGVO. Diese Einwilligung kann jederzeit ohne Angabe von Gründen widerrufen werden. Der Widerruf ist an die Verantwortlichen (Ziff. 1) zu richten.
+Der Verein veröffentlicht Daten seiner Mitglieder unter anderem im Internet (auf seiner Homepage #link("https://swablab.de")[swablab.de]), auf Social Media sowie in Printmedien (wie den Schwarzwälder Boten). Insbesondere werden in obigen Medien auch Bilder von Vereinsveranstaltungen veröffentlicht. Das Mitglied willigt in diese Veröffentlichung ein, Art. 6 Abs. 1 a\) DSGVO. Diese Einwilligung kann jederzeit ohne Angabe von Gründen widerrufen werden. Der Widerruf ist an die Verantwortlichen (Ziff. 1) zu richten.
 
 == Dauer der Speicherung
 Nach dem Austritt werden Name, Adresse und Geburtsdatum aus der Mitgliederliste gelöscht. Personenbezogene Daten des austretenden Mitglieds, die die Kassenverwaltung betreffen, werden gemäß den steuerrechtlichen Bestimmungen bis zu 10 Jahre ab Austritt aufbewahrt.
