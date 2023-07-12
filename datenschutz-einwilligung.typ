@@ -1,77 +1,10 @@
-#set document(
-  author: "swablab e.V.",
-  title: "Datenschutzrechtliche Hinweise"
-)
+#import "templates/form.typ": tmpl, form, form_field
 
-#set text(
-  font: "Corbel",
-  size: 12pt,
-  lang: "de",
-)
-
-#set par(justify: true)
-#set page(
-  paper: "a4",
-  margin: (x: 2cm, y: 2cm),
-)
-
-// Formularfelder
-#let cell(
-  width: 10em,
+#show: doc => tmpl(
+  title: "Datenschutzrechtliche Hinweise",
+  version: "v1.2",
   doc,
-) = {
-  rect(
-    fill: rgb("e4e5ea"),
-    height: 100%,
-    width: width,
-  )
-  v(-1em)
-  text(
-    size: 9pt,
-    fill: rgb("000000"),
-    doc
-  )
-}
-
-// Vorlage Spalte 1
-#let cell_text(
-  doc,
-) = {
-  v(weak: false, 0.5em)
-  set text(10pt)
-  align(right, strong(doc))
-}
-
-// Version
-#place(
-  top + left,
-  dx: -22.85em,
-  dy: 21.75em,
-  
-  rotate(
-    90deg,
-    origin: top + right,
-    text(
-      size: 10pt,
-      fill: rgb("9c9c9c"),
-      [swablab e.V. / Datenschutzrechtliche Hinweise v1.2 / #datetime.today().display("[day].[month].[year]")]
-    )
-  )
 )
-
-// Logo
-#place(
-  top + right,
-  dx: 2.5em,
-  dy: -2.5em,
-  image("templates/lightmode-swablab.png", width: 25%)
-)
-
-#text(1.75em, font:"Convergence")[
-  #heading(outlined: false)[*Datenschutzrechtliche \ Hinweise*]
-]
-
-#v(1em)
 
 Der swablab e. V. verarbeitet personenbezogene Daten seiner Mitglieder, sowie bei minderjährigen Mitgliedern auch personenbezogene Daten deren Sorgeberechtigter.
 
@@ -102,18 +35,10 @@ Das Mitglied hat das Recht, sich bei der Aufsichtsbehörde (Landesdatenschutzbea
 
 #v(1em)
 
-// Unterschrift
-#grid(
-  columns: (50pt, auto),
-  rows: (2em),
-  gutter: 0.5em,
-  row-gutter: 2em,
-  
-  cell_text([Unterschrift]),
-  stack(
-    dir: ltr,
-    spacing: 0.5em,
-    cell(width: 50% - 0.25em)[ort & datum], 
-    cell(width: 50% - 0.25em)[unterschrift (bei minderjährigen der ges. vertr.)]
-  ),
-)
+#form[Unterschrift][
+  #form_field[ort & datum]
+][
+  #form_field[unterschrift\ 
+  (bei minderjährigen der gesetzliche vertreter)]
+]
+

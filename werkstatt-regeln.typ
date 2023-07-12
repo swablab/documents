@@ -1,50 +1,10 @@
-#set document(
-  author: "swablab e.V.",
-  title: "Verhaltensregeln Werkstatt"
+#import "templates/form.typ": tmpl
+
+#show: doc => tmpl(
+  title: "Verhaltensregeln Werkstatt",
+  version: "v1.0",
+  doc,
 )
-
-#set text(
-  font: "Corbel",
-  size: 12pt,
-  lang: "de",
-)
-
-#set par(justify: true)
-#set page(
-  paper: "a4",
-  margin: (x: 2cm, y: 2cm),
-)
-
-// Version
-#place(
-  top + left,
-  dx: -21.75em,
-  dy: 20.15em,
-  
-  rotate(
-    90deg,
-    origin: top + right,
-    text(
-      size: 10pt,
-      fill: rgb("9c9c9c"),
-      [swablab e.V. / Verhaltensregeln Werkstatt v1.0 / #datetime.today().display("[day].[month].[year]")]
-    )
-  )
-)
-
-// Logo
-#place(
-  top + right,
-  dx: 2.5em,
-  dy: -2.5em,
-  image("templates/lightmode-swablab.png", width: 25%)
-)
-
-#text(1.75em, font:"Convergence")[
-  #heading(outlined: false)[*Verhaltensregeln Werkstatt*]
-]
-
-#v(5em)
 
 - Alle Nutzer*innen müssen vor Nutzung der Werkzeuge eine Einweisung erhalten und eine Einweisungsbestätigung und einen Haftungsausschluss unterzeichnen.
 - Jugendliche ab 12 Jahren dürfen nur mit vorheriger Einverständniserklärung der Eltern/Erziehungsberechtigten teilnehmen. Diese muss an den Vorstand übergeben worden sein.

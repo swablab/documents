@@ -3,6 +3,7 @@
   changes: (),
   heading_size: 18pt,
   heading_font: "Convergence",
+  text_size: 12pt,
   text_font: "Corbel",
   doc,
 ) = {
@@ -13,7 +14,7 @@ set document(
 
 set text(
   font: text_font,
-  size: 12pt,
+  size: text_size,
   lang: "de"
 )
 
@@ -33,7 +34,7 @@ set enum(
 align(center)[
   #image("lightmode-swablab.png", width: 70%)
 
-  #pad(bottom: 32pt)[
+  #pad(bottom: 2em)[
     #text(1.75em, font: heading_font, hyphenate: false)[
       #heading(outlined: false)[*#title*]
   ]]

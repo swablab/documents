@@ -28,11 +28,10 @@
 + Kosten für Materialkäufe oder alle anderen Waren und Dienstleistungen sind selbstständig in den dafür vorgesehenen Kassen zu entrichten. Preise sind dementsprechend ausgehängt.
 
 = Öffnungszeiten / Schließungen
-+ #block([Der swablab e.V. behält sich vor, in zumutbarer Weise und zumutbarem Umfang
++ #[Der swablab e.V. behält sich vor, in zumutbarer Weise und zumutbarem Umfang
 - die Öffnungszeiten zu ändern,
 - kurzfristige Schließungen im Falle von Mangel an ehrenamtlicher Personalkapazität,
 - kurzfristige Schließungen im Falle technischer Revisionen oder Reparatur- und Wartungsarbeiten vorzunehmen, tageweise Teilbereiche oder den Betrieb insgesamt anlässlich von speziellen Veranstaltungen nach vorheriger Ankündigung zu schließen.]
-)
 
 + Ein Vereinsmitglied des swablab e.V. hat diesbezüglich keinen Anspruch auf Minderung der Mitgliedsbeiträge, da diese Einschränkungen bereits in der Beitragskalkulation zugunsten des Nutzers berücksichtigt sind.
 
@@ -99,11 +98,11 @@
 = Daten des Nutzers
 + Der swablab e.V. erhebt, speichert, verarbeitet und nutzt personenbezogene Daten, die er unmittelbar von Nutzern direkt oder über die Nutzung seiner Einrichtungen wie auch seiner Internetseiten erhält.
 
-+ #block([Der swablab e.V. versichert, dass sämtliche Daten seiner Nutzer streng vertraulich behandelt werden und unter Beachtung der einschlägigen Datenschutzvorschriften ausschließlich für
++ #[Der swablab e.V. versichert, dass sämtliche Daten seiner Nutzer streng vertraulich behandelt werden und unter Beachtung der einschlägigen Datenschutzvorschriften ausschließlich für
 
 - die Verwaltung des Nutzungssvertrages,
 - die Abwicklung der Nutzungsbeiträge,
-- die Übermittlung von neuen Angeboten und aktuellen Informationen durch den swablab e.V. selbst verwendet werden.])
+- die Übermittlung von neuen Angeboten und aktuellen Informationen durch den swablab e.V. selbst verwendet werden.]
 
 + Der Nutzer ist berechtigt, Auskunft über die gespeicherten Daten und kostenfreie Korrektur oder Löschung nach Vertragsende zu verlangen.
 
