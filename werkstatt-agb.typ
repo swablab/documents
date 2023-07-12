@@ -1,13 +1,10 @@
-#import "templates/template.typ": tmpl
-
-#let d = datetime.today().display("[day].[month].[year]")
+#import "templates/doc.typ": tmpl
 
 #show: doc => tmpl(
   title: "Allgemeine Geschäftsbedingungen (AGB)",
-  version: "v1.0",
-  date: d,
   changes: (
-  [v1.0], [#d], [erste Fassung]),
+    [v1.0], [23.06.2023], [erste Fassung],
+  ),
   doc,
 )
 

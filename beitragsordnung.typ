@@ -1,9 +1,7 @@
-#import "templates/template.typ": tmpl
+#import "templates/doc.typ": tmpl
 
 #show: doc => tmpl(
   title: "Beitragsordnung",
-  version: "v1.1",
-  date: "01.04.2023",
   changes: (
   [v1.0], [19.10.2020], [erste Fassung],
   [v1.1], [01.04.2023], [
@@ -13,7 +11,6 @@
   doc,
 )
 
-// Inhalt
 = Allgemeines
 + Diese Beitragsordnung ist nicht Bestandteil der Satzung. Sie kann nur von der Mitgliederversammlung des Vereins geändert werden.
 + Beim Ausscheiden aus dem Verein erfolgt keine Rückerstattung bereits geleisteter \ Beiträge.

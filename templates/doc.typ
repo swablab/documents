@@ -1,7 +1,5 @@
 #let tmpl(
   title: none,
-  version: none,
-  date: none,
   changes: (),
   heading_size: 18pt,
   heading_font: "Convergence",
@@ -35,12 +33,13 @@ set enum(
 align(center)[
   #image("lightmode-swablab.png", width: 70%)
 
-  #text(1.75em, font: heading_font, hyphenate: false)[
-    #heading(outlined: false)[*#title*]
-  ]\
-  \
+  #pad(bottom: 32pt)[
+    #text(1.75em, font: heading_font, hyphenate: false)[
+      #heading(outlined: false)[*#title*]
+  ]]
+  
 
-  #version - #date \
+  #changes.at(-3) - #changes.at(-2) \
   swablab e.V. \
   Katharinenstr. 1 \
   72250 Freudenstadt
@@ -48,7 +47,7 @@ align(center)[
 
 set page(
   footer: [
-    #emph[#version]
+    #emph[#changes.at(-3)]
     #h(2fr)
     #counter(page).display()
   ]
