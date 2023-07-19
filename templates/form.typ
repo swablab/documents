@@ -2,9 +2,9 @@
   title: none,
   version: none,
   heading_size: 18pt,
-  heading_font: "Convergence",
+  heading_font: "Ubuntu",
   text_size: 12pt,
-  text_font: "Corbel",
+  text_font: "Noto Sans",
   doc,
 ) = {
 set document(
@@ -54,7 +54,7 @@ place(
 
 block(width: 100%-70pt, height: 70pt)[
   #par(justify: false)[
-    #text(1.75em, font:"Convergence")[
+    #text(font: heading_font, heading_size)[
       #heading(outlined: false)[*#title*]
     ]
   ]

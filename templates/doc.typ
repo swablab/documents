@@ -2,9 +2,9 @@
   title: none,
   changes: (),
   heading_size: 18pt,
-  heading_font: "Convergence",
+  heading_font: "Ubuntu",
   text_size: 12pt,
-  text_font: "Corbel",
+  text_font: "Noto Sans",
   doc,
 ) = {
 set document(
@@ -93,7 +93,7 @@ show heading: it => [
 ]
 heading([Änderungen])
 table(
-  columns: (auto, auto, auto),
+  columns: (auto, auto, 1fr),
   inset: 8pt,
   align: auto,
   stroke: 0.5pt,
