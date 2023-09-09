@@ -13,7 +13,7 @@
 
 = Allgemeines
 + Diese Beitragsordnung ist nicht Bestandteil der Satzung. Sie kann nur von der Mitgliederversammlung des Vereins geändert werden.
-+ Beim Ausscheiden aus dem Verein erfolgt keine Rückerstattung bereits geleisteter \ Beiträge.
++ Beim Ausscheiden aus dem Verein erfolgt keine Rückerstattung bereits geleisteter Beiträge.
 
 = Beschlüsse
 Beschlüsse über die Änderung der Beitragsordnung gelten ab dem 1. des auf die Beschlussfassung folgenden Monats. Durch Beschluss der Mitgliederversammlung kann auch ein anderer Termin festgelegt werden.

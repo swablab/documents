@@ -3,10 +3,16 @@
 #show: doc => tmpl(
   title: "Datenschutzrechtliche Hinweise",
   version: "v1.2",
+  change_date: "24.06.2023",
+  text_size: 11.25pt,
   doc,
 )
 
+#v(-4em)
+
+#block(width: 32em)[
 Der swablab e. V. verarbeitet personenbezogene Daten seiner Mitglieder, sowie bei minderjährigen Mitgliedern auch personenbezogene Daten deren Sorgeberechtigter.
+]
 
 == Verantwortlicher
 Verantwortlicher für die Datenverarbeitung ist der swablab e. V., vertreten durch den Vorstand: Manuel Knodel, Fabian Haas, den weiteren einzelvertretungsberechtigten Vorstandsmitgliedern, sowie den in der Verwaltung tätigen Mitgliedern. \
@@ -32,8 +38,6 @@ Jedes Vereinsmitglied hat das Recht auf
 
 == Verstöße
 Das Mitglied hat das Recht, sich bei der Aufsichtsbehörde (Landesdatenschutzbeauftragter des Landes Baden-Württemberg) bei Verstößen des swablab e.V. gegen datenschutzrechtliche Bestimmungen bei der Verarbeitung seiner personenbezogenen Daten zu beschweren.
-
-#v(1em)
 
 #form[Unterschrift][
   #form_field[ort & datum]

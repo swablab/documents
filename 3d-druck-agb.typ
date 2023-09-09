@@ -27,7 +27,7 @@
 + Die Zahlung des Kaufpreises hat ausschließlich auf das auf den Vertragspapieren genannte Konto zu erfolgen. Der Abzug von Skonto ist nur bei schriftlicher besonderer Vereinbarung zulässig.
 + Sofern nichts anderes vereinbart wird, ist der Kaufpreis innerhalb von 14 Tagen nach Lieferung bzw. Rechnungserhalt zu zahlen. Verzugszinsen werden in Höhe von 8 % über dem jeweiligen Basiszinssatz p.a. festgelegt. Die Geltendmachung eines höheren Verzugsschadens bleibt vorbehalten.
 + Kann auch nach zweifacher Abmahnung keine Bezahlung des Kaufpreises festgestellt werden, behält sich der swablab e.V. weitere rechtliche Schritte vor.
-+ Privatpersonen (natürlich Personen) können von einem Rechnungskauf keinen Gebrauch machen. In dem Fall ist der gesamte Warenwert, sowie der Wert der Verpackungs- und Versandkosten sofort vor Produktion der Ware fällig. Der Rechnungsbetrag kann per **Vorkasse oder PayPal im Voraus beglichen werden.** Nach Eingang des vollständigen Rechnungsbetrags wird der swablab e.V. die Bestellung, je nach Auslastung, schnellstmöglich ausführen. + Sofern keine Festpreisabrede getroffen wurde, bleiben angemessene Preisänderungen wegen veränderter Lohn-, Material- und Vertriebskosten für Lieferungen, die 3 Monate oder später nach Vertragsabschluss erfolgen, vorbehalten.
++ Privatpersonen (natürlich Personen) können von einem Rechnungskauf keinen Gebrauch machen. In dem Fall ist der gesamte Warenwert, sowie der Wert der Verpackungs- und Versandkosten sofort vor Produktion der Ware fällig. Der Rechnungsbetrag kann per *Vorkasse oder PayPal im Voraus beglichen werden.* Nach Eingang des vollständigen Rechnungsbetrags wird der swablab e.V. die Bestellung, je nach Auslastung, schnellstmöglich ausführen. + Sofern keine Festpreisabrede getroffen wurde, bleiben angemessene Preisänderungen wegen veränderter Lohn-, Material- und Vertriebskosten für Lieferungen, die 3 Monate oder später nach Vertragsabschluss erfolgen, vorbehalten.
 
 = Zurückbehaltungsrechte
 + Zur Ausübung eines Zurückbehaltungsrechts ist der Besteller nur insoweit befugt, als sein Gegenanspruch auf dem gleichen Vertragsverhältnis beruht.
@@ -39,6 +39,8 @@
 + Kosten für Verpackungsmaterial sowie dem Versand sind nicht Bestandteil des ausgewiesenen Kaufpreises. Sollten mehrere Produkte bestellt werden, werden diese ggf. zusammen in einem Karton geliefert.
 + Der swablab e.V. versendet hauptsächlich mit UPS, DHL und der Deutschen Post. Die Kosten für den Versand berechnen sich aus dem Gewicht, den Abmaßen der Versandkartons sowie dem Lieferland.
 
+// workaround bug https://github.com/typst/typst/issues/993
+#pagebreak()
 = Gefahrenübergang bei Versendung
 + Wird die Ware auf Wunsch des Bestellers an diesen versandt, so geht mit der Absendung an den Besteller, spätestens mit Verlassen des Werks/Lagers die Gefahr des zufälligen Untergangs oder der zufälligen Verschlechterung der Ware auf den Besteller über. Dies gilt unabhängig davon, ob die Versendung der Ware vom Erfüllungsort erfolgt oder wer die Frachtkosten trägt.
 
@@ -52,6 +54,8 @@
 = Urheberrecht
 + Die Nutzer sind jeweils selbst dafür verantwortlich, die Rechte an der dem swablab e.V. zur Verfügung gestellten Daten, CAD/3D-Modelle zu besitzen. Der swablab e.V. ist insbesondere nicht verpflichtet, die Berechtigung der Nutzer zu überprüfen. Die Nutzer stellen dem swablab e.V. bei einem Verstoß gegen die vorstehend beschriebene Rechteeinräumung von sämtlichen berechtigten Ansprüchen Dritter im Hinblick frei.
 
+// workaround bug https://github.com/typst/typst/issues/993
+#pagebreak()
 = Gewährleistung und Mängelrüge sowie Rückgriff/Herstellerregress
 + Gewährleistungsrechte des Bestellers setzen voraus, dass dieser seinen nach § 377 HGB geschuldeten Untersuchungs- und Rügeobliegenheiten ordnungsgemäß nachgekommen ist.
 + Mängelansprüche verjähren in 12 Monaten nach erfolgter Ablieferung der vom swablab e.V. gelieferten Ware bei unserem Besteller. Für Schadensersatzansprüche bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung von Leben, Körper und Gesundheit, die auf einer vorsätzlichen oder fahrlässigen Pflichtverletzung des Verwenders beruhen, gilt die gesetzliche Verjährungsfrist. Soweit das Gesetz gemäß § 438 Abs. 1 Nr. 2 BGB (Bauwerke und Sachen für Bauwerke), § 445 b BGB (Rückgriffsanspruch) und § 634a Absatz 1 BGB (Baumängel) längere Fristen zwingend vorschreibt, gelten diese Fristen. Vor etwaiger Rücksendung der Ware ist die Zustimmung durch ein vertretungsberechtigtes Mitglied des swablab e.V. einzuholen.

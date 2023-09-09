@@ -1,6 +1,7 @@
 #let tmpl(
   title: none,
   version: none,
+  change_date: none,
   heading_size: 18pt,
   heading_font: "Ubuntu",
   text_size: 12pt,
@@ -39,7 +40,7 @@ place(
     text(
       size: 10pt,
       fill: rgb("9c9c9c"),
-      [swablab e.V. / #title #version / #datetime.today().display("[day].[month].[year]")]
+      [swablab e.V. / #title #version / #change_date]
     )
   )
 )
@@ -66,11 +67,11 @@ doc
 #let form(title, ..fields) = {
   grid(
     columns: (60pt, ..fields.pos().map(i => 1fr)),
-    rows: (2em),
+    rows: (2.25em),
     gutter: 0.5em,
-    row-gutter: 1.5em,
     text(10pt)[
-      #align(horizon + right)[
+      #align(top + right)[
+        #v(0.5em)
         #strong(title)
       ]
     ],
@@ -83,6 +84,7 @@ doc
     #rect(
       fill: rgb("e4e5ea"),
       width: width,
+      height: 2em,
     )
   ][
     #text(9pt, fill: rgb("000000"))[
@@ -91,6 +93,6 @@ doc
   ]
 }
 
-#let form_inline() = {
-  box(height: 0.75em, width: 14em, fill: rgb("e4e5ea"), outset: (y: 3pt))
+#let form_inline(width: 12em) = {
+  box(height: 0.75em, width: width, fill: rgb("e4e5ea"), outset: (y: 3pt))
 }

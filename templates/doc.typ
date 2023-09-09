@@ -34,7 +34,7 @@ set enum(
 align(center)[
   #image("lightmode-swablab.png", width: 70%)
 
-  #pad(bottom: 2em)[
+  #pad(top: 2em, bottom: 2em)[
     #text(1.75em, font: heading_font, hyphenate: false)[
       #heading(outlined: false)[*#title*]
   ]]
@@ -51,7 +51,8 @@ set page(
     #emph[#changes.at(-3)]
     #h(2fr)
     #counter(page).display()
-  ]
+  ],
+  margin: (bottom: 2.5cm)
 )
 
 // Inhaltsverzeichnis
@@ -68,6 +69,8 @@ set par(
   leading: 1em,
 )
 
+pagebreak()
+
 // Formatierung Inhalt
 set heading(numbering: "§1")
 show heading: it => [
@@ -83,22 +86,23 @@ show heading: it => [
 // Inhalt
 doc
 
+pagebreak()
 // Änderungen
 set heading(numbering: none)
 show heading: it => [
-  #v(2.25em, weak: true)
   #set text(font: heading_font, heading_size)
   #strong[#it.body]
   #v(1.25em, weak: true)
 ]
-heading([Änderungen])
-table(
+block(breakable: false)[
+#heading([Änderungen])
+#table(
   columns: (auto, auto, 1fr),
   inset: 8pt,
   align: auto,
   stroke: 0.5pt,
   [*Version*], [*Änderungsdatum*], [*Änderungen*],
   ..changes
-)
+)]
 
 }

@@ -40,6 +40,8 @@
 
 + Alle Preise und Konditionen werden dem Nutzer transparent dargestellt und bei Bedarf erläutert.
 
+// workaround bug https://github.com/typst/typst/issues/993
+#pagebreak()
 = Pflichten des Mieters
 + Den Anweisungen des Vorstands des swablab e.V. ist unbedingt und ohne Ausnahme Folge zu leisten.
 
@@ -53,8 +55,6 @@
 
 + *Haftpflichtversicherung* - Der Nutzer muss über eine wirksam abgeschlossene Haftpflichtversicherung verfügen. Diese ist dem swablab e.V. auf Verlangen nachzuweisen.
 
-// workaround bug https://github.com/typst/typst/issues/993
-#block(breakable: false)[
 = Werkstatteinrichtung
 + Der Nutzer muss bei vor der Nutzung von Werkzeugen oder Maschinen diese auf Beschädigung prüfen und eventuelle Beschädigungen oder Defekte sofort dem swablab e.V. melden. Der Nutzer kommt für alle durch ihn entstandenen Schäden und Defekte an den Werkzeugen oder Maschinen des swablab e.V. oder auch an seinen eigenen mitgebrachten und benutzten Werkzeugen und Materialien auf.
 
@@ -67,7 +67,6 @@
 + Geliehene Werkzeuge und Maschinen sind ausschließlich im swablab e.V. zu benutzen, außer es wurde schriftlich anders vereinbart. Jeder Diebstahl oder Versuch eines Diebstahls wird sofort zur Anzeige gebracht und mit unverzüglichem Hausverbot belegt.
 
 + Der Nutzer hat keinen Anspruch darauf, dass alle Werkzeuge, Maschinen sowie Einrichtungen zu jeder Zeit nutzbar sind. Dies ist beispielsweise bei einem Defekt, Reparaturvorgang oder Nutzung durch andere Mieter der Fall.
-]
 
 = Sicherheit
 + *Arbeitsschutz* - Für ausreichenden Arbeitsschutz und Arbeitskleidung ist der Nutzer selbst verantwortlich. Der swablab e.V. ist nicht verpflichtet, dies zu kontrollieren und kann bei Arbeitsunfällen nicht haftbar gemacht werden.

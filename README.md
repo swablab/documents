@@ -8,7 +8,6 @@
 
 - [Noto](https://fonts.google.com/specimen/Noto)
 - [Ubuntu](https://fonts.google.com/specimen/Ubuntu)
-- Corbel (Microsoft Font)
 
 ## Generieren der PDFs
 
