@@ -57,7 +57,6 @@
   #form_field[unterschrift (bei minderjährigen der ges. vertr.)]
 ]
 
-#v(0.5em)
 #text(10pt, style: "italic")[
   \* Bitte eines der Felder ankreuzen. Es kann auch ein beliebig höherer Beitrag entrichtet werden.
 ]

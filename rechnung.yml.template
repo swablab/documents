@@ -1,0 +1,18 @@
+type: invoice # invoice (Rechnung), estimate (Kostenvoranschlag), internal (Eigenbeleg)
+date: 01.01.2024
+customer_no: 0 # für Rechnung und Kostenvoranschlag
+invoice_no: 0 # für Rechnung
+internal_reason: Begründung # für Eigenbeleg
+address: |
+  Name
+  Straße
+  PLZ Adresse
+entries:
+  - description: Teil 1
+    pieces: 2
+    price: 5
+    sale: 1
+  - description: Teil 2
+    pieces: 1
+    price: 2
+    sale: 0

@@ -1,3 +1,10 @@
+#let colors = (
+  primary: oklch(93.84%, 0.09, 183.69deg),
+  secondary: oklch(73.51%, 0.168, 40.25deg),
+  subtext: oklch(60%, 0, 0deg),
+  highlight: oklch(90%, 0, 0deg),
+)
+
 #let tmpl(
   title: none,
   version: none,
@@ -39,7 +46,7 @@ place(
     origin: bottom + left,
     text(
       size: 10pt,
-      fill: rgb("9c9c9c"),
+      fill: colors.subtext,
       [swablab e.V. / #title #version / #change_date]
     )
   )
@@ -82,17 +89,17 @@ doc
 #let form_field(name, width: 100%) = {
   stack(spacing: 2pt)[
     #rect(
-      fill: rgb("e4e5ea"),
+      fill: colors.highlight,
       width: width,
       height: 2em,
     )
   ][
-    #text(9pt, fill: rgb("000000"))[
+    #text(9pt, fill: black)[
       #name
     ]
   ]
 }
 
 #let form_inline(width: 12em) = {
-  box(height: 0.75em, width: width, fill: rgb("e4e5ea"), outset: (y: 3pt))
+  box(height: 0.75em, width: width, fill: colors.highlight, outset: (y: 3pt))
 }
