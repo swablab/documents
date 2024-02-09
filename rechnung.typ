@@ -4,6 +4,7 @@
 #show: doc => tmpl(
   title: (
     invoice: "Rechnung",
+    offer: "Angebot",
     estimate: "Kostenvoranschlag",
     internal: "Eigenbeleg"
   ).at(config.type),
@@ -35,6 +36,8 @@
   ]
   #if config.type == "invoice" [
     Rechnungs-Nr.: #config.invoice_no \
+  ] else if config.type == "offer" [
+    Angebots-Nr.: #config.invoice_no \
   ]
 ]
 
@@ -102,7 +105,7 @@
 #place(bottom+left)[
   #if config.type == "invoice" [
     Vielen Dank für deine Bestellung! \
-  ] else if config.type == "estimate" [
+  ] else if config.type == "estimate" or config.type == "offer" [
     Wir freuen uns auf deine Bestellung! \
   ] else if config.type == "internal" [
     *Grund für Eigenbeleg:* \
@@ -113,7 +116,9 @@
     #if config.type == "invoice" [
       Gesamtbetrag fällig in 10 Tagen ab Rechnungserhalt. \
       Für überfällige Zahlungen wird eine Bearbeitungsgebühr von min. 5 % pro Monat berechnet.
-    ] else if config.type == "estimate" [
+    ] else if config.type == "offer" [
+      Dieses Angebot ist für einen Monat gültig.
+    ]else if config.type == "estimate" [
       Dieser Kostenvoranschlag ist unverbindlich.
     ]
 
