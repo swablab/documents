@@ -66,7 +66,7 @@
   if i == 0 {
     return "0.00€"
   }
-  str(calc.round(i * 100)).slice(0,-2)+ "." + str(i * 100).slice(-2) + "€"
+  str(calc.round(i * 100)).slice(0,-2)+ "." + str(calc.round(i * 100)).slice(-2) + "€"
 }
 
 // DIN 5008 nach Faltmarke 1
