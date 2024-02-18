@@ -1,7 +1,14 @@
 {
   "editor.tabSize": 2,
+  "editor.formatOnSave": true,
   "prettier.tabWidth": 2,
   "[typst]": {
     "editor.wordWrap": "on"
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
