@@ -1,0 +1,14 @@
+date: 12.12.2023
+date_of_donation: 20.12.2023
+amount: "200.00"
+amount_text: Zweihundert
+release_expenditures: false
+address: |
+  Name
+  Straße
+  PLZ Adresse
+collection:
+#  - date: 12.12.2021
+#    type: Mitgliedsbeitrag
+#    release_expenditures: false
+#    amount: "16.00"
