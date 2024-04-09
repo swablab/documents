@@ -10,6 +10,7 @@
 - [Ubuntu](https://fonts.google.com/specimen/Ubuntu)
 
 ## Generieren der PDFs
+### Linux
 
 ```bash
 # automatisches kompilieren bei Änderungen
@@ -17,4 +18,9 @@ typst watch *.typ
 
 # einmaliges kompilieren
 typst compile *.typ
+```
+
+### Windows
+```ps1
+.\typst.exe compile .\spendenbescheinigung.typ
 ```
