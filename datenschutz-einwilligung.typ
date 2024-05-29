@@ -1,10 +1,10 @@
-#import "templates/form.typ": tmpl, form, form_field
+#import "templates/tmpl_page.typ": tmpl_page
+#import "templates/form.typ": form, form_field
 
-#show: doc => tmpl(
+#show: doc => tmpl_page(
   title: "Datenschutzrechtliche Hinweise",
   version: "v1.2",
   change_date: "24.06.2023",
-  text_size: 11.25pt,
   doc,
 )
 

@@ -1,6 +1,6 @@
-#import "templates/form.typ": tmpl
+#import "templates/tmpl_page.typ": tmpl_page
 
-#show: doc => tmpl(
+#show: doc => tmpl_page(
   title: "Verhaltensregeln Werkstatt",
   version: "v1.0",
   change_date: "09.09.2023",

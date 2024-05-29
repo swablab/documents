@@ -1,6 +1,7 @@
-#import "templates/form.typ": tmpl, form, form_field, form_inline
+#import "templates/tmpl_page.typ": tmpl_page
+#import "templates/form.typ": form, form_field, form_inline
 
-#show: doc => tmpl(
+#show: doc => tmpl_page(
   title: "Beitrittserklärung",
   version: "v1.6",
   change_date: "09.09.2023",

@@ -1,6 +1,6 @@
-#import "templates/doc.typ": tmpl
+#import "templates/tmpl_doc.typ": tmpl_doc
 
-#show: doc => tmpl(
+#show: doc => tmpl_doc(
   title: "Allgemeine Geschäftsbedingungen (AGB)",
   changes: (
     [v1.0], [23.06.2023], [erste Fassung],

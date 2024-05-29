@@ -1,11 +1,10 @@
-#import "templates/form.typ": tmpl, colors, form_field
+#import "templates/tmpl_page.typ": tmpl_page
+#import "templates/common.typ": colors
+#import "templates/form.typ": form_field
 #let config = yaml("spendenbescheinigung.yml")
 
-#show: doc => tmpl(
+#show: doc => tmpl_page(
   title: "Spendenbescheinigung",
-  version: "",
-  change_date: config.date,
-  text_size: 11.25pt,
   doc,
 )
 
