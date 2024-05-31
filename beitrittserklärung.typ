@@ -5,14 +5,11 @@
   title: "Beitrittserklärung",
   version: "v1.6",
   change_date: "09.09.2023",
+  subtext: [
+    Hiermit trete ich zum #form_inline(width: 10em), dem swablab e.V. als Mitglied bei und erkenne die Satzung, die Beitragsordnung und die Ziele des Vereins an.
+  ],
   doc,
 )
-
-#v(-4em)
-
-#block(width: 32em)[
-  Hiermit trete ich zum #form_inline(width: 10em), dem swablab e.V. als Mitglied bei und erkenne die Satzung, die Beitragsordnung und die Ziele des Vereins an.
-]
 
 #text(10pt, style: "italic")[
   Bitte leserlich in Druckbuchstaben ausfüllen. Alle Felder sind Pflichtangaben.

@@ -8,12 +8,8 @@
   doc,
 )
 
-#v(-1em)
-
-#block(width: 32em)[
-  #text(10pt, style: "italic")[
-    Bitte leserlich in Druckbuchstaben ausfüllen. Alle Felder sind Pflichtangaben.
-  ]
+#text(10pt, style: "italic")[
+  Bitte leserlich in Druckbuchstaben ausfüllen. Alle Felder sind Pflichtangaben.
 ]
 
 #form[Name][

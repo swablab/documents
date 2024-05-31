@@ -4,6 +4,7 @@
   title: none,
   version: none,
   change_date: none,
+  subtext: none,
   doc,
 ) = {
   show: doc => common(title: title, doc)
@@ -24,13 +25,15 @@
     image("lightmode-swablab.png", width: 25%)
   )
 
-  block(width: 100%-70pt, height: 70pt)[
+  block(width: 100%-100pt, height: 70pt)[
     #par(justify: false)[
       #text(font: "Ubuntu", 18pt)[
         #heading(outlined: false)[*#title*]
       ]
     ]
+    #subtext
   ]
+
 
   doc
 }

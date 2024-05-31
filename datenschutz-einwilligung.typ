@@ -5,14 +5,11 @@
   title: "Datenschutzrechtliche Hinweise",
   version: "v1.2",
   change_date: "24.06.2023",
+  subtext: [
+    Der swablab e. V. verarbeitet personenbezogene Daten seiner Mitglieder, sowie bei minderjährigen Mitgliedern auch personenbezogene Daten deren Sorgeberechtigter.
+  ],
   doc,
 )
-
-#v(-4em)
-
-#block(width: 32em)[
-Der swablab e. V. verarbeitet personenbezogene Daten seiner Mitglieder, sowie bei minderjährigen Mitgliedern auch personenbezogene Daten deren Sorgeberechtigter.
-]
 
 == Verantwortlicher
 Verantwortlicher für die Datenverarbeitung ist der swablab e. V., vertreten durch den Vorstand: Manuel Knodel, Fabian Haas, den weiteren einzelvertretungsberechtigten Vorstandsmitgliedern, sowie den in der Verwaltung tätigen Mitgliedern. \
