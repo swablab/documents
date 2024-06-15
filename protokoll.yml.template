@@ -1,0 +1,24 @@
+title: Mitgliederversammlung
+date: Montag, 01.01.2024, 12:00 Uhr
+location: Gartenstraße 11, Dornstetten
+author: Autor
+lead: Leitung # Optional
+signature: false # wenn true wird signature.png (und ggf. signature_lead.png) geladen
+content: |
+  Anwesend: alle
+
+  Nicht anwesend: niemand
+
+  = TOP 1 - Überschrift
+
+  Hier könnte Ihre Werbung stehen!
+
+  + Nummerierter Punkt 1
+  + Nummerierter Punkt 2
+    - Unterpunkt
+    - Weiterer Unterpunkt
+  + Nummerierter Punkt 3
+
+  = TOP 2 - Typst
+
+  #link("https://typst.app/docs/tutorial/writing-in-typst/")
