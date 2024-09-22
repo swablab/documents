@@ -1,9 +1,8 @@
-
 # invoice (Rechnung)
 # offer (Angebot)
 # estimate (Kostenvoranschlag)
 # internal (Eigenbeleg)
-type: invoice 
+type: invoice
 date: 01.01.2024
 customer_no: 0 # für Rechnung, Angebot und Kostenvoranschlag
 invoice_no: 0 # für Rechnung und Angebot

@@ -1,3 +1,7 @@
 {
-  "recommendations": ["mathematic.vscode-pdf", "nvarner.typst-lsp"]
+  "recommendations": [
+    "myriad-dreamin.tinymist",
+    "redhat.vscode-yaml",
+    "mathematic.vscode-pdf"
+  ]
 }

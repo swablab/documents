@@ -1,0 +1,20 @@
+{
+  "name": "documents",
+  "build": {
+    "dockerfile": "Containerfile"
+  },
+  "containerUser": "vscode",
+  "runArgs": [
+    "--userns=keep-id",
+    "--security-opt=label=disable"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "myriad-dreamin.tinymist",
+        "redhat.vscode-yaml",
+        "mathematic.vscode-pdf"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+FROM mcr.microsoft.com/devcontainers/base:alpine
+RUN apk add typst
+RUN mkdir -p /home/vscode/.local/share/fonts
+RUN wget -O /home/vscode/.local/share/fonts/ubuntu.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.ttf
+RUN wget -O /home/vscode/.local/share/fonts/noto.ttf https://cdn.jsdelivr.net/fontsource/fonts/noto-sans@latest/latin-400-normal.ttf
