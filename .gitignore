@@ -1,3 +1,4 @@
 *.pdf
 *.yml
 *.png
+!.github/**
