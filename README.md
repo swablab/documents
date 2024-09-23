@@ -1,4 +1,4 @@
-# offizielle Dokumente von swablab e.V.
+# offizielle Dokumente des swablab e.V.
 
 ## Installation typst
 
@@ -10,6 +10,7 @@
 - [Ubuntu](https://fonts.google.com/specimen/Ubuntu)
 
 ## Generieren der PDFs
+
 ### Linux
 
 ```bash
