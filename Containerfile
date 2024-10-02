@@ -1,9 +1,8 @@
 FROM docker.io/alpine:latest AS build
 WORKDIR /app
-RUN apk add typst
-RUN wget -O ubuntu.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.ttf
-RUN wget -O noto.ttf https://cdn.jsdelivr.net/fontsource/fonts/noto-sans@latest/latin-400-normal.ttf
-ENV TYPST_FONT_PATHS=/app
+RUN apk add typst font-noto
+RUN mkdir -p /usr/share/fonts/ubuntu
+RUN wget -O /usr/share/fonts/ubuntu/ubuntu.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.ttf
 
 COPY . .
 RUN typst c 3d-druck-agb.typ
