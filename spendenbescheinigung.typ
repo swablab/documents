@@ -82,22 +82,22 @@
       Ob es sich um den Verzicht auf Erstattung von Aufwendungen handelt, ist der Anlage zur Sammelbestätigung zu entnehmen. 
     ]} else {
       if config.release_expenditures {
-      [Es handelt sich um den Verzicht auf Erstattung von Aufwendungen: #h(5em) 🗹 Ja #h(5em) ☐ Nein]
+      [Es handelt sich um den Verzicht auf Erstattung von Aufwendungen: #h(5em) ☑ Ja #h(5em) ☐ Nein]
       } else {
-      [Es handelt sich um den Verzicht auf Erstattung von Aufwendungen: #h(5em) ☐ Ja #h(5em) 🗹 Nein]
+      [Es handelt sich um den Verzicht auf Erstattung von Aufwendungen: #h(5em) ☐ Ja #h(5em) ☑ Nein]
       }
     }
 
-    🗹 Wir sind wegen Förderung _von Organisationen der Bildung, Wissenschaft und Forschung_ nach dem Freistellungsbescheid bzw. nach der Anlage zum Körperschaftsteuerbescheid des Finanzamtes _Finanzamt Freudenstadt_ StNr. _42099/46775_, vom _21.12.2020_ für den letzten Veranlagungszeitraum _2023_ nach § 5 Abs. 1 Nr. 9 des Körperschaftsteuergesetzes von der Körperschaftsteuer und nach § 3 Nr. 6 des Gewerbesteuergesetzes von der Gewerbesteuer befreit.
+    ☑ Wir sind wegen Förderung _von Organisationen der Bildung, Wissenschaft und Forschung_ nach dem Freistellungsbescheid bzw. nach der Anlage zum Körperschaftsteuerbescheid des Finanzamtes _Finanzamt Freudenstadt_ StNr. _42099/46775_, vom _21.12.2020_ für den letzten Veranlagungszeitraum _2023_ nach § 5 Abs. 1 Nr. 9 des Körperschaftsteuergesetzes von der Körperschaftsteuer und nach § 3 Nr. 6 des Gewerbesteuergesetzes von der Gewerbesteuer befreit.
 
-    🗹 Die Einhaltung der satzungsmäßigen Voraussetzungen nach den §§ 51, 59, 60 und 61 AO wurde vom Finanzamt _Finanzamt Freudenstadt_, StNr. _42099/46775_ mit Bescheid vom _21.12.2020_ nach § 60a AO gesondert festgestellt. 
+    ☑ Die Einhaltung der satzungsmäßigen Voraussetzungen nach den §§ 51, 59, 60 und 61 AO wurde vom Finanzamt _Finanzamt Freudenstadt_, StNr. _42099/46775_ mit Bescheid vom _21.12.2020_ nach § 60a AO gesondert festgestellt. 
     Wir fördern nach unserer Satzung _von Organisationen der Bildung, Wissenschaft und Forschung_.
 
     #box(stroke: black, inset: 0.5em)[
       Es wird bestätigt, dass die Zuwendung nur zur Förderung _von Organisationen der Bildung, Wissenschaft und Forschung_ verwendet wird.
 
       *Nur für steuerbegünstigte Einrichtungen, bei denen die Mitgliedsbeiträge steuerlich nicht abziehbar sind:* \
-      🗹 Es wird bestätigt, dass es sich nicht um einen Mitgliedsbeitrag handelt, dessen Abzug nach § 10b Abs. 1 des Einkommensteuergesetzes ausgeschlossen ist.
+      ☑ Es wird bestätigt, dass es sich nicht um einen Mitgliedsbeitrag handelt, dessen Abzug nach § 10b Abs. 1 des Einkommensteuergesetzes ausgeschlossen ist.
     ]
 
   ]
