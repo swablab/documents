@@ -39,5 +39,8 @@
     paper: "a4",
     margin: (x: 2cm, y: 2cm),
   )
+
+  show link: underline
+  
   doc
 }

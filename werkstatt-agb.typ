@@ -40,8 +40,6 @@
 
 + Alle Preise und Konditionen werden dem Nutzer transparent dargestellt und bei Bedarf erläutert.
 
-// workaround bug https://github.com/typst/typst/issues/993
-#pagebreak()
 = Pflichten des Mieters
 + Den Anweisungen des Vorstands des swablab e.V. ist unbedingt und ohne Ausnahme Folge zu leisten.
 
@@ -58,7 +56,7 @@
 = Werkstatteinrichtung
 + Der Nutzer muss bei vor der Nutzung von Werkzeugen oder Maschinen diese auf Beschädigung prüfen und eventuelle Beschädigungen oder Defekte sofort dem swablab e.V. melden. Der Nutzer kommt für alle durch ihn entstandenen Schäden und Defekte an den Werkzeugen oder Maschinen des swablab e.V. oder auch an seinen eigenen mitgebrachten und benutzten Werkzeugen und Materialien auf.
 
-+ Das Labelsystem ist unbedingt zu beachten. Weitere Infos dazu sind im Wiki unter #link("https://wiki.swablab.de/de/Labelsystem")[wiki.swablab.de/de/Labelsystem] einsehbar.
++ Das Labelsystem ist unbedingt zu beachten. Weitere Infos dazu sind im Wiki unter https://wiki.swablab.de/de/Labelsystem einsehbar.
 
 + Der Nutzer trägt die Kosten für sämtliche durch ihn beschädigten Werkzeuge, Maschinen oder Einrichtungen (Wiederbeschaffungskosten).
 
@@ -111,7 +109,7 @@
 
 + Die Einwilligung zur Verwendung persönlicher Daten kann selbstverständlich jederzeit mit Wirkung für die Zukunft widerrufen werden.
 
-+ Weitere Informationen zum Datenschutz im Sinne des Artikels 13 der DSGVO können unseren Datenschutzhinweisen entnommen werden. Diese findet man auf unserer Website unter #link("https://swablab.de/docs/beitrittserklaerung")[swablab.de/docs/beitrittserklaerung]
++ Weitere Informationen zum Datenschutz im Sinne des Artikels 13 der DSGVO können unseren Datenschutzhinweisen entnommen werden. Diese findet man auf unserer Website unter https://swablab.de/docs/mitgliedsantrag.pdf
 
 = Schlussbestimmungen
 + *Nebenabreden* - Mündliche Nebenabreden sind nicht getroffen. Änderungen und/oder Ergänzungen des Vertrages bedürfen der Schriftform, dies gilt auch für Änderungen dieses Schriftformerfordernisses.

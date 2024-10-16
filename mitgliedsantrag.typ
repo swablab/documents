@@ -2,9 +2,9 @@
 #import "templates/form.typ": form, form_field, form_inline
 
 #show: doc => tmpl_page(
-  title: "Beitrittserklärung",
-  version: "v1.6",
-  change_date: "09.09.2023",
+  title: "Mitgliedsantrag",
+  version: "v2.0",
+  change_date: "16.10.2024",
   subtext: [
     Hiermit trete ich zum #form_inline(width: 10em), dem swablab e.V. als Mitglied bei und erkenne die Satzung, die Beitragsordnung und die Ziele des Vereins an.
   ],
@@ -15,29 +15,29 @@
   Bitte leserlich in Druckbuchstaben ausfüllen. Alle Felder sind Pflichtangaben.
 ]
 
-#form[Name][
+#form(width: 65pt)[Name][
   #form_field[vorname]
 ][
   #form_field[nachname]
 ]
 
-#form[Anschrift][
+#form(width: 65pt)[Anschrift][
   #form_field[straße & hausnummer]
 ][
   #form_field[plz & ort]
 ]
 
-#form[Kontakt][
+#form(width: 65pt)[Kontakt][
   #form_field[email]
 ][
   #form_field[telefon]
 ]
 
-#form[Geburtstag][
+#form(width: 65pt)[Geburtstag][
   #form_field[datum]
 ][]
 
-#form[monatlicher\ Beitrag][
+#form(width: 65pt)[monatlicher\ Beitrag][
   #form_field(width: 2em)[voll (16€\*)]
 ][
   #form_field(width: 2em)[ermäßigt (8€\*)]
@@ -48,18 +48,24 @@
 ][
   #form_field[selbstgewählt]
 ]
+#text(10pt, style: "italic")[
+  \* Bitte eines der Felder ankreuzen. Es kann auch ein beliebig höherer Beitrag entrichtet werden.
+]
 
-#form[Unterschrift][
+#v(1em)
+
+Mit meiner Unterschrift willige ich in die Speicherung und Verarbeitung der von mir angegebenen personenbezogenen Daten ein. Unsere vollständigen Datenschutzhinweise sind unter https://swablab.de/docs/datenschutz.pdf einsehbar.
+
+#form(width: 65pt)[Unterschrift][
   #form_field[ort & datum]
 ][
   #form_field[unterschrift (bei minderjährigen der ges. vertr.)]
 ]
 
-#text(10pt, style: "italic")[
-  \* Bitte eines der Felder ankreuzen. Es kann auch ein beliebig höherer Beitrag entrichtet werden.
-]
+#v(1em)
 
-=== SEPA-Lastschriftmandat
+== SEPA-Lastschriftmandat
+
 Hiermit ermächtige ich den
 
 #block(inset: (x: 3em))[
@@ -70,27 +76,23 @@ Hiermit ermächtige ich den
 
 den jeweils gültigen Vereinsbeitrag bei Fälligkeit zu Lasten meines Kontos mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die vom swablab e.V. auf mein Konto gezogenen Lastschriften einzulösen.
 
-#text(10pt, style: "italic")[
-  Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen.
-]
-
-#form[Kontoinhaber][
+#form(width: 70pt)[Kontoinhaber][
   #form_field[vorname]
 ][
   #form_field[nachname]
 ]
 
-#form[IBAN][
+#form(width: 70pt)[IBAN][
   #form_field[iban]
 ]
 
-#form[Institut\ & BIC][
+#form(width: 70pt)[Institut & BIC][
   #form_field[institut]
 ][
   #form_field[bic]
 ]
 
-#form[Unterschrift][
+#form(width: 70pt)[Unterschrift][
   #form_field[ort & datum]
 ][
   #form_field[unterschrift kontoinhaber\ 

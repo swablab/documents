@@ -1,13 +1,12 @@
 #import "common.typ": colors
 
-#let form(title, ..fields) = {
+#let form(title, ..fields, width: 60pt) = {
   grid(
-    columns: (60pt, ..fields.pos().map(i => 1fr)),
+    columns: (width, ..fields.pos().map(i => 1fr)),
     rows: (2.25em),
     gutter: 0.5em,
     text(10pt)[
-      #align(top + right)[
-        #v(0.5em)
+      #align(horizon + right)[
         #strong(title)
       ]
     ],
