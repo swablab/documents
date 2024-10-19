@@ -16,7 +16,7 @@ RUN typst c beitragsordnung.typ
 RUN typst c beleg.typ
 RUN typst c datenschutz.typ
 RUN typst c haftungsausschluss.typ
-RUN typst c mtgliedsantrag.typ
+RUN typst c mitgliedsantrag.typ
 RUN typst c satzung.typ
 RUN typst c werkstatt-agb.typ
 RUN typst c werkstatt-regeln.typ
