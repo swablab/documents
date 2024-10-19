@@ -7,8 +7,6 @@
   doc,
 )
 
-Wir freuen uns über dein Interesse an swablab e.V. Der Schutz deiner personenbezogenen Daten ist uns wichtig. In diesem Dokument informieren wir dich darüber, welche Daten wir erheben, zu welchem Zweck sie verwendet werden und wie du deine Rechte ausüben kannst.
-
 == Verantwortlicher
 
 Verantwortlicher für die Datenverarbeitung ist der swablab e. V., vertreten durch den Vorstand: Manuel Knodel, Fabian Haas, den weiteren einzelvertretungsberechtigten Vorstandsmitgliedern, sowie den in der Verwaltung tätigen Mitgliedern.
@@ -18,11 +16,9 @@ swablab e. V., Katharinenstr. 1, 72250 Freudenstadt; E-Mail: #link("info@swablab
 
 == Erhebung und Verarbeitung personenbezogener Daten
 
-Bei Mitgliedern speichern wir alle personenbezogenen Daten, die im Mitgliedsantrag angegeben sind, einschließlich Name, Adresse, E-Mail-Adresse, Telefonnummer, Geburtsdatum und für SEPA benötigte Informationen.
+Bei Mitgliedern speichern wir alle personenbezogenen Daten, die im Mitgliedsantrag angegeben sind, einschließlich Name, Adresse, E-Mail-Adresse, Telefonnummer, Geburtsdatum und die für SEPA benötigten Informationen.
 
 Bei Personen, die den Haftungsausschluss unterschrieben haben, speichern wir alle personenbezogene Daten, die im Haftungsausschluss angegeben sind, einschließlich Name, Adresse, E-Mail-Adresse, Telefonnummer und Geburtsdatum.
-
-Bei minderjährigen Personen werden auch personenbezogene Daten der Sorgeberechtigten gespeichert.
 
 == Zweck der Datenverarbeitung
 
