@@ -1,9 +1,16 @@
 {
   "name": "documents",
-  "build": {
-    "dockerfile": "Containerfile"
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/michidk/devcontainers-features/typst": {},
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages": {
+      "packages": "fonts-noto-core,fonts-ubuntu"
+    }
   },
   "containerUser": "vscode",
+  "containerEnv": {
+    "TYPST_FONT_PATHS": "/usr/share/fonts"
+  },
   "runArgs": [
     "--userns=keep-id",
     "--security-opt=label=disable"

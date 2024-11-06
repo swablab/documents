@@ -9,17 +9,32 @@ jobs:
   deploy:
     name: 🚢 Deploy
     runs-on: ubuntu-latest
+    env:
+      TYPST_FONT_PATHS: /usr/share/fonts
     steps:
       - uses: actions/checkout@v4
+      - run: sudo apt install -y fonts-noto-core fonts-ubuntu
+
+      - uses: typst-community/setup-typst@v3
+      - run: typst c 3d-druck-agb.typ
+      - run: typst c beitragsordnung.typ
+      - run: typst c beleg.typ
+      - run: typst c datenschutz.typ
+      - run: typst c haftungsausschluss.typ
+      - run: typst c mtgliedsantrag.typ
+      - run: typst c satzung.typ
+      - run: typst c werkstatt-agb.typ
+      - run: typst c werkstatt-regeln.typ
 
       - name: build containerfile
         id: build-image
         uses: redhat-actions/buildah-build@v2
         with:
           image: ghcr.io/swablab/documents
+          base-image: scratch
           tags: latest
-          containerfiles: |
-            ./Containerfile
+          content: |
+            *.pdf
 
       - name: Log in to ghcr.io
         uses: redhat-actions/podman-login@v1
