@@ -21,7 +21,7 @@ jobs:
       - run: typst c beleg.typ
       - run: typst c datenschutz.typ
       - run: typst c haftungsausschluss.typ
-      - run: typst c mtgliedsantrag.typ
+      - run: typst c mitgliedsantrag.typ
       - run: typst c satzung.typ
       - run: typst c werkstatt-agb.typ
       - run: typst c werkstatt-regeln.typ
