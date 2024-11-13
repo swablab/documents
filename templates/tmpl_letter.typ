@@ -83,8 +83,8 @@
           https://swablab.de
         ],
         [
-          VR-Bank Dornstetten-Horb \
-          DE12 6426 2408 0125 6340 05
+          Volksbank in der Region \
+          DE18 6039 1310 0125 6340 05
         ],
         [
           VR 724909 \

@@ -84,7 +84,7 @@
       inset: 1em,
       radius: 1em
     )[
-      #qr-code("BCD\n002\n1\nSCT\n\nswablab e.V.\nDE12642624080125634005\nEUR" + str(config.entries.map(e => e.pieces * e.price - e.sale).sum()) + "\nGDDS\n\nRechnung " + str(config.invoice_no) + "\nswablab Rechnung", width: 2cm)
+      #qr-code("BCD\n002\n1\nSCT\n\nswablab e.V.\nDE18603913100125634005\nEUR" + str(config.entries.map(e => e.pieces * e.price - e.sale).sum()) + "\nGDDS\n\nRechnung " + str(config.invoice_no) + "\nswablab Rechnung", width: 2cm)
       
       #place(center+bottom, dy: 1.1em)[
         #block(width: 100%+0.75em, fill: white)[
