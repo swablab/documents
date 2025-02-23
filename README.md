@@ -40,8 +40,8 @@ typst compile spendenbescheinigung.typ
 ## Änderungen
 
 Wenn du etwas ändern willst oder du einen Fehler bemerkt hast, dann öffne gerne
-ein [Issue](https://git.swablab.de/swablab/website/issues) und beschreibe
+ein [Issue](https://git.swablab.de/swablab/documents/issues) und beschreibe
 möglichst genau dein Problem.
 
 Alternativ kannst du die Änderung auch gerne selbst entwickeln und einen
-[Pull Request](https://git.swablab.de/swablab/website/pulls) stellen.
+[Pull Request](https://git.swablab.de/swablab/documents/pulls) stellen.
