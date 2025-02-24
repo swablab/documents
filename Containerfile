@@ -1,4 +1,5 @@
 FROM docker.io/library/alpine AS build
+COPY . .
 ENV TYPST_FONT_PATHS=.
 RUN apk add typst
 RUN wget -O ubuntu.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.ttf &&\

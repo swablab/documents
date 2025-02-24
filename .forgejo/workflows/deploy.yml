@@ -12,17 +12,11 @@ jobs:
       image: quay.io/buildah/stable:latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - name: download
-        run: curl ${{ github.server_url }}/${{ github.repository }}/archive/main.tar.gz | tar -xz
-
       - name: login
         run: buildah login -u token -p ${{ secrets.SWABLAB_ORGA_PACKAGE_TOKEN }} git.swablab.de
 
-      - name: ls
-        run: ls documents
-
       - name: build
-        run: buildah build -f documents/Containerfile -t git.swablab.de/${{ github.repository }}:latest documents
+        run: buildah build -t git.swablab.de/${{ github.repository }}:latest ${{ github.server_url }}/${{ github.repository }}.git
 
       - name: push
         run: buildah push git.swablab.de/${{ github.repository }}:latest
