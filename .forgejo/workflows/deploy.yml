@@ -20,11 +20,11 @@ jobs:
       - name: download
         run: curl https://${{ env.url }}/archive/main.tar.gz | tar -xz
 
-      - name: login
-        run: buildah login -u token -p ${{ env.token }} ${{ env.git }}
-
       - name: build
         run: buildah build -f ${{ env.repo }}/Containerfile -t ${{ env.url }}:latest ${{ env.repo }}
+
+      - name: login
+        run: buildah login -u token -p ${{ env.token }} ${{ env.git }}
 
       - name: push
         run: buildah push ${{ env.git }}/${{ github.repository }}:latest
