@@ -1,4 +1,4 @@
 *.pdf
 *.yml
 *.png
-!.github/**
+!.forgejo/**
