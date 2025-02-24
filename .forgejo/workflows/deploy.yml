@@ -2,21 +2,29 @@ name: deploy
 on: [push, workflow_dispatch]
 
 env:
-  STORAGE_DRIVER: vfs
+  repo: documents
+  git: git.swablab.de
+  url: git.swablab.de/${{ github.repository }}
+  token: ${{ secrets.SWABLAB_ORGA_PACKAGE_TOKEN }}
 
 jobs:
   deploy:
     name: deploy
     runs-on: docker
+    if: github.ref == 'refs/heads/main'
     container:
       image: quay.io/buildah/stable:latest
-    if: github.ref == 'refs/heads/main'
+      env:
+        STORAGE_DRIVER: vfs
     steps:
+      - name: download
+        run: curl https://${{ env.url }}/archive/main.tar.gz | tar -xz
+
       - name: login
-        run: buildah login -u token -p ${{ secrets.SWABLAB_ORGA_PACKAGE_TOKEN }} git.swablab.de
+        run: buildah login -u token -p ${{ env.token }} ${{ env.git }}
 
       - name: build
-        run: buildah build -t git.swablab.de/${{ github.repository }}:latest ${{ github.server_url }}/${{ github.repository }}.git
+        run: buildah build -f ${{ env.repo }}/Containerfile -t ${{ env.url }}:latest ${{ env.repo }}
 
       - name: push
-        run: buildah push git.swablab.de/${{ github.repository }}:latest
+        run: buildah push ${{ env.git }}/${{ github.repository }}:latest
