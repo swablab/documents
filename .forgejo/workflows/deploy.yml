@@ -18,6 +18,9 @@ jobs:
       - name: login
         run: buildah login -u token -p ${{ secrets.SWABLAB_ORGA_PACKAGE_TOKEN }} git.swablab.de
 
+      - name: ls
+        run: ls documents
+
       - name: build
         run: buildah build -f documents/Containerfile -t git.swablab.de/${{ github.repository }}:latest documents
 
