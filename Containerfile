@@ -1,5 +1,6 @@
 FROM docker.io/library/alpine AS build
 ENV TYPST_FONT_PATHS=.
+RUN apk add typst
 RUN wget -O ubuntu.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.ttf &&\
     wget -O noto.ttf https://cdn.jsdelivr.net/fontsource/fonts/noto-sans@latest/latin-400-normal.ttf
 RUN typst c 3d-druck-agb.typ &&\
