@@ -9,7 +9,7 @@
 
 == Verantwortlicher
 
-Verantwortlicher für die Datenverarbeitung ist der swablab e. V., vertreten durch den Vorstand: Manuel Knodel, Fabian Haas, den weiteren einzelvertretungsberechtigten Vorstandsmitgliedern, sowie den in der Verwaltung tätigen Mitgliedern.
+Verantwortlicher für die Datenverarbeitung ist der swablab e. V., vertreten durch den Vorstand: Fabian Haas, Manuel Knodel, Bastian Wittke, den weiteren einzelvertretungsberechtigten Vorstandsmitgliedern, sowie den in der Verwaltung tätigen Mitgliedern.
 
 Vereinsanschrift: \
 swablab e. V., Katharinenstr. 1, 72250 Freudenstadt; E-Mail: #link("info@swablab.de").

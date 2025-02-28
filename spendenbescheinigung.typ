@@ -134,7 +134,8 @@
       ],
       [
         Fabian Haas \
-        Manuel Knodel
+        Manuel Knodel \
+        Bastian Wittke
       ],
   )
   ]
