@@ -1,5 +1,9 @@
 name: deploy
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 env:
   repo: documents
@@ -11,20 +15,19 @@ jobs:
   deploy:
     name: deploy
     runs-on: docker
-    if: github.ref == 'refs/heads/main'
     container:
-      image: quay.io/buildah/stable:latest
+      image: docker:cli
       env:
-        STORAGE_DRIVER: vfs
+        DOCKER_HOST: tcp://172.17.0.1:2375
     steps:
       - name: download
-        run: curl https://${{ env.url }}/archive/main.tar.gz | tar -xz
+        run: wget -O- https://${{ env.url }}/archive/main.tar.gz | tar -xz
 
       - name: build
-        run: buildah build -f ${{ env.repo }}/Containerfile -t ${{ env.url }}:latest ${{ env.repo }}
+        run: docker buildx build -f ${{ env.repo }}/Containerfile -t ${{ env.url }}:latest ${{ env.repo }}
 
       - name: login
-        run: buildah login -u token -p ${{ env.token }} ${{ env.git }}
+        run: docker login -u token -p ${{ env.token }} ${{ env.git }}
 
       - name: push
-        run: buildah push ${{ env.git }}/${{ github.repository }}:latest
+        run: docker push ${{ env.git }}/${{ github.repository }}:latest
