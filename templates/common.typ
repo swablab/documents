@@ -5,35 +5,27 @@
   highlight: oklch(90%, 0, 0deg),
 )
 
-#let money(i) = {
-  if i == 0 {
-    return "0.00€"
-  }
 
-  let j = str(calc.round(i * 100))
+#let money(d) = {
+  d = calc.round(d, digits: 2)
+  d += decimal("0.001")
 
-  if i < 1 {
-    "0." + j.slice(-2) + "€"
-  } else {
-    j.slice(0,-2)+ "." + j.slice(-2) + "€"
-  }
+  str(d).slice(0, -1) + "€"
 }
 
 #let common(title: none, doc) = {
   set document(
     title: title,
-    author: "swablab e.V."
+    author: "swablab e.V.",
   )
 
   set text(
     font: "Noto Sans",
     size: 11pt,
-    lang: "de"
+    lang: "de",
   )
 
-  set par(
-    justify: true
-  )
+  set par(justify: true)
 
   set page(
     paper: "a4",
@@ -41,6 +33,6 @@
   )
 
   show link: underline
-  
+
   doc
 }
