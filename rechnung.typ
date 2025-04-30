@@ -69,7 +69,7 @@
       e.at(1).pieces,
       money(e.at(1).price),
       money(e.at(1).sale),
-      money(e.at(1).pieces * e.at(1).price - e.at(1).sale),
+      money(e.at(1).pieces * decimal(e.at(1).price) - decimal(e.at(1).sale)),
     ))
     .flatten()
     .map(e => [#e]),
@@ -77,7 +77,7 @@
 
 #align(right)[
   #pad(x: 1em)[
-    *Gesamtbetrag: #money(config.entries.map(e => e.pieces * e.price - e.sale).sum())*
+    *Gesamtbetrag: #money(config.entries.map(e => e.pieces * decimal(e.price) - decimal(e.sale)).sum())*
   ]
 ]
 
@@ -91,7 +91,7 @@
     )[
       #qr-code(
         "BCD\n002\n1\nSCT\n\nswablab e.V.\nDE18603913100125634005\nEUR"
-          + str(config.entries.map(e => e.pieces * e.price - e.sale).sum())
+          + str(config.entries.map(e => e.pieces * decimal(e.price) - decimal(e.sale)).sum())
           + "\nGDDS\n\nRechnung "
           + str(config.invoice_no)
           + "\nswablab Rechnung",

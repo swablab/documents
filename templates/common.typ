@@ -6,7 +6,8 @@
 )
 
 
-#let money(d) = {
+#let money(s) = {
+  let d = decimal(s)
   d = calc.round(d, digits: 2)
   d += decimal("0.001")
 
