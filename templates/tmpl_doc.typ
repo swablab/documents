@@ -7,12 +7,8 @@
 ) = {
   show: doc => common(title: title, doc)
 
-  set enum(
-    numbering: "(1)"
-  )
-  set text(
-    size: 12pt,
-  )
+  set enum(numbering: "(1)")
+  set text(size: 12pt)
 
   // Titelblatt
   align(center)[
@@ -23,7 +19,7 @@
         #heading(outlined: false)[*#title*]
       ]
     ]
-    
+
     #changes.at(-3) - #changes.at(-2) \
     swablab e.V. \
     Katharinenstr. 1 \
@@ -34,9 +30,9 @@
     footer: [
       #text(size: 10pt, fill: colors.subtext)[#changes.at(-3)]
       #h(2fr)
-      #text(size: 10pt, fill: colors.subtext)[#counter(page).display()]
+      #text(size: 10pt, fill: colors.subtext)[#context counter(page).display()]
     ],
-    margin: (bottom: 2.5cm)
+    margin: (bottom: 2.5cm),
   )
 
   // Inhaltsverzeichnis
@@ -49,9 +45,7 @@
 
   outline(title: [*Inhaltsverzeichnis*])
 
-  set par(
-    leading: 1em,
-  )
+  set par(leading: 1em)
 
   pagebreak()
 
@@ -80,13 +74,13 @@
     #v(1.25em, weak: true)
   ]
   block(breakable: false)[
-  #heading([Änderungen])
-  #table(
-    columns: (auto, auto, 1fr),
-    inset: 8pt,
-    align: auto,
-    stroke: 0.5pt,
-    [*Version*], [*Änderungsdatum*], [*Änderungen*],
-    ..changes
-  )]
+    #heading([Änderungen])
+    #table(
+      columns: (auto, auto, 1fr),
+      inset: 8pt,
+      align: auto,
+      stroke: 0.5pt,
+      [*Version*], [*Änderungsdatum*], [*Änderungen*],
+      ..changes
+    )]
 }

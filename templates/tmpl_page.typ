@@ -22,14 +22,12 @@
     top + right,
     dx: 2.5em,
     dy: -2.5em,
-    image("lightmode-swablab.png", width: 25%)
+    image("lightmode-swablab.png", width: 25%),
   )
 
-  block(width: 100%-100pt, height: 70pt)[
-    #par(justify: false)[
-      #text(font: "Ubuntu", 18pt)[
-        #heading(outlined: false)[*#title*]
-      ]
+  block(width: 100% - 100pt, height: 70pt)[
+    #text(font: "Ubuntu", 18pt)[
+      #heading(outlined: false)[*#title*]
     ]
     #subtext
   ]

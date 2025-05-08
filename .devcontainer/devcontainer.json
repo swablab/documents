@@ -7,14 +7,9 @@
       "packages": "fonts-noto-core,fonts-ubuntu"
     }
   },
-  "containerUser": "vscode",
   "containerEnv": {
     "TYPST_FONT_PATHS": "/usr/share/fonts"
   },
-  "runArgs": [
-    "--userns=keep-id",
-    "--security-opt=label=disable"
-  ],
   "customizations": {
     "vscode": {
       "extensions": [
