@@ -1,6 +1,6 @@
 #import "templates/tmpl_letter.typ": tmpl_letter
 #import "templates/common.typ": colors, money
-#import "@preview/cades:0.3.0": qr-code
+#import "@preview/cades:0.3.1": qr-code
 #let config = yaml("rechnung.yml")
 
 #show: doc => tmpl_letter(
