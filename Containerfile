@@ -11,6 +11,7 @@ RUN typst c 3d-druck-agb.typ &&\
     typst c haftungsausschluss.typ &&\
     typst c mitgliedsantrag.typ &&\
     typst c satzung.typ &&\
+    typst c verschwiegenheitserklärung.typ &&\
     typst c werkstatt-agb.typ &&\
     typst c werkstatt-regeln.typ
 
