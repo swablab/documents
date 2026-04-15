@@ -33,9 +33,9 @@ oder Vermögensmassen.
   [*- in Buchstaben -*],
   [*Tag der Zuwendung*],
   [#config.amount EUR],
-  [#config.amount_text EUR],
+  [#config.amount_text],
   [#config.date_of_donation],
-  table.cell(colspan: 3)[#config.description]
+  table.cell(colspan: 3)[#config.description],
 )
 
 #text(size: 0.9em)[
