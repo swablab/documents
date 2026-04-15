@@ -1,5 +1,5 @@
 #import "templates/tmpl_letter.typ": tmpl_letter
-#import "templates/common.typ": colors
+#import "templates/common.typ": colors, money
 #import "templates/form.typ": form_field
 #let config = yaml("sachzuwendung.yml")
 
@@ -32,7 +32,7 @@ oder Vermögensmassen.
   [*Gesamtbetrag der Zuwendung*],
   [*- in Buchstaben -*],
   [*Tag der Zuwendung*],
-  [#config.amount EUR],
+  [#str(config.amount).replace(".", ",") EUR],
   [#config.amount_text],
   [#config.date_of_donation],
   table.cell(colspan: 3)[#config.description],

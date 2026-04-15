@@ -11,7 +11,7 @@
   d = calc.round(d, digits: 2)
   d += decimal("0.001")
 
-  str(d).slice(0, -1) + "€"
+  str(d).replace(".", ",").slice(0, -1) + "€"
 }
 
 #let common(title: none, doc) = {
