@@ -1,0 +1,16 @@
+date: 01.01.2024
+order_no: 0
+offer_no: 0
+discount: 0 # Rabatt als Betrag, global
+tax: 0 # Steuer als Betrag
+address: |
+  Firma
+  Straße
+  PLZ Ort
+entries:
+  - description: Teil 1
+    pieces: 2
+    price: 5
+  - description: Teil 2
+    pieces: 1
+    price: 2
