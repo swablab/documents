@@ -1,0 +1,42 @@
+package main
+
+import (
+	"io"
+	"log/slog"
+	"net/http"
+	"os"
+	"os/exec"
+)
+
+func main() {
+	http.HandleFunc("/{doc}", func(w http.ResponseWriter, r *http.Request) {
+		doc := r.PathValue("doc")
+		config, err := io.ReadAll(r.Body)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			slog.Error("read request", "error", err.Error())
+			return
+		}
+
+		err = os.WriteFile(doc+".yml", config, 0644)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			slog.Error("write config", "error", err.Error())
+			return
+		}
+		defer os.Remove(doc + ".yml")
+
+		cmd := exec.Command("typst", "c", doc+".typ", "-")
+		pdf, err := cmd.Output()
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			slog.Error("typst", "error", err.Error())
+			return
+		}
+		w.Header().Set("Content-Type", "application/pdf")
+		w.Write(pdf)
+		slog.Info("rendered", "doc", doc)
+	})
+
+	http.ListenAndServe(":8080", nil)
+}
