@@ -27,14 +27,14 @@ func main() {
 		defer os.Remove(doc + ".yml")
 
 		cmd := exec.Command("typst", "c", doc+".typ", "-")
-		pdf, err := cmd.Output()
+		typst, err := cmd.CombinedOutput()
 		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
+			http.Error(w, string(typst), http.StatusInternalServerError)
 			slog.Error("typst", "error", err.Error())
 			return
 		}
 		w.Header().Set("Content-Type", "application/pdf")
-		w.Write(pdf)
+		w.Write(typst)
 		slog.Info("rendered", "doc", doc)
 	})
 
