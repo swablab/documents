@@ -29,7 +29,7 @@ func main() {
 		cmd := exec.Command("typst", "c", doc+".typ", "-")
 		typst, err := cmd.CombinedOutput()
 		if err != nil {
-			http.Error(w, string(typst), http.StatusInternalServerError)
+			http.Error(w, string(typst), http.StatusBadRequest)
 			slog.Error("typst", "error", err.Error())
 			return
 		}
