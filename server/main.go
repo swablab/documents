@@ -38,5 +38,6 @@ func main() {
 		slog.Info("rendered", "doc", doc)
 	})
 
+	slog.Info("server started", "port", "8080")
 	http.ListenAndServe(":8080", nil)
 }
