@@ -4,8 +4,8 @@
 
 #show: doc => tmpl_page(
   title: "Belegblatt",
-  version: "v1.0",
-  change_date: "31.05.2024",
+  version: "v1.1",
+  change_date: "12.08.2026",
   subtext: "Formular zum Abrechnen von Ausgaben für den Verein.",
   doc,
 )
@@ -16,28 +16,17 @@
     + Kläre die Beschaffung mit dem Vorstand ab
     + Kaufe ein
     + Fülle rechts das Formular aus
-    + Klebe den Beleg auf diesen Bereich 
+    + Klebe den Beleg auf diesen Bereich
     + Gib das Belegblatt beim Vorstand ab
+    + Das Geld wird dir überwiesen
   ]
 ][
   #box(inset: (x: 1em))[
     #form_field[Vorname]
     #form_field[Nachname]
     #form_field[Datum des Belegs]
-    #form_field[Lieferant/Bezugsquelle]
-
-    Der Betrag wurde...
-    #grid(columns: (1fr,1fr,1fr))[
-      #form_field(width: 2em)[gespendet]
-    ][
-      #form_field(width: 2em)[ausgezahlt]
-    ][
-      #form_field(width: 2em)[überwiesen]
-    ]
-    
-    #form_field[IBAN (bei Überweisung)]
-
-
+    #form_field[Lieferant/Bezugsquelle (z.B. Kaufland)]
+    #form_field[Betrag]
     #form_field[Unterschrift Einkäufer]
     #form_field[Unterschrift Vorstand]
   ]
