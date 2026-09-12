@@ -8,7 +8,7 @@ FROM docker.io/library/alpine
 WORKDIR /app
 COPY . .
 ENV TYPST_FONT_PATHS=.
-RUN apk add typst
+RUN apk add --no-cache typst
 RUN wget -O ubuntu.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.ttf &&\
     wget -O noto.ttf https://cdn.jsdelivr.net/fontsource/fonts/noto-sans@latest/latin-400-normal.ttf
 RUN typst c 3d-druck-agb.typ &&\
@@ -21,6 +21,10 @@ RUN typst c 3d-druck-agb.typ &&\
     typst c verschwiegenheitserklärung.typ &&\
     typst c werkstatt-agb.typ &&\
     typst c werkstatt-regeln.typ
+RUN set -e; \
+    for file in operating_instructions/*.typ; do \
+    typst c --root . "$file"; \
+    done
 
 COPY --from=server /go/bin/server /bin/server
 CMD ["/bin/server"]

@@ -1,6 +1,6 @@
 # Offizielle Dokumente
 
-Hier befinden sich die [Typst](https://typst.app/)-Vorlagen 
+Hier befinden sich die [Typst](https://typst.app/)-Vorlagen
 der offiziellen Vereinsdokumente des swablab e.V.
 
 ## Installation
@@ -33,8 +33,20 @@ typst compile spendenbescheinigung.typ
 ```
 
 ### Windows
+
 ```ps1
 .\typst.exe compile .\spendenbescheinigung.typ
+```
+
+### Betriebsanweisungen
+
+Das allgemeine Template befindet sich unter `templates/tmpl_betriebsanweisung.typ`.
+Eine konkrete Maschine wird als eigene Inhaltsseite unter `operating_instructions/`
+angelegt und erbt das Template. Aus dem Repository-Hauptverzeichnis wird sie so
+kompiliert:
+
+```bash
+typst compile --root . operating_instructions/tischkreissaege.typ
 ```
 
 ## Änderungen
