@@ -2,14 +2,14 @@
 
 #show: doc => betriebsanweisung(
   subject: "Kappsäge",
-  responsible: "",
+  responsible: "Manuel Knodel",
   date: "10. September 2026",
   doc,
 )
 
 #ba-section(
   "Gefahren für Mensch und Umwelt",
-  ("W001",),
+  ("W001","W022",),
   (
     "Schwere Schnittgefahr durch das rotierende Sägeblatt",
     "Rückschlag und Herausschleudern von Werkstücken oder Abschnitten",
@@ -21,7 +21,7 @@
 
 #ba-section(
   "Schutzmaßnahmen und Verhaltensregeln",
-  ("M003", "M004", "P028"),
+  ("M003","M031","P028"),
   (
     "Nur scharfe und für die Kappsäge geeignete Sägeblätter verwenden",
     "Werkstück immer am Anschlag anlegen und gegen Verrutschen sichern",
@@ -60,7 +60,7 @@
 
 #ba-section(
   "Instandhaltung",
-  ("M008",),
+  ("M002",),
   (
     "Sägeblattwechsel und Reinigungsarbeiten nur bei stillstehender und gesicherter Maschine durchführen",
     "Sägeblatt, Schutzhaube, Anschlag, Spannvorrichtung und Not-Halt regelmäßig prüfen",
