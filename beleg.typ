@@ -32,7 +32,7 @@
     #form_field[Vorname]
     #form_field[Nachname]
     #form_field[Datum des Einkaufs]
-    #form_field[Datum des Belegs]
+    #form_field[Datum dieses Belegblatts]
     #form_field[Lieferant/Bezugsquelle (z.B. Kaufland)]
     #form_field[Betrag]
     #form_field[Unterschrift Einkäufer]
