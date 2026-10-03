@@ -19,5 +19,8 @@
       ]
     }
   },
-  "mounts": ["source=.gitconfig,target=/home/vscode/.gitconfig,type=bind"]
+  "mounts": [
+    "source=.ssh,target=/home/vscode/.ssh,type=bind",
+    "source=.gitconfig,target=/home/vscode/.gitconfig,type=bind"
+  ]
 }
