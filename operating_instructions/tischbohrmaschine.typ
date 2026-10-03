@@ -2,14 +2,14 @@
 
 #show: doc => betriebsanweisung(
   subject: "Tischbohrmaschine",
-  responsible: "",
+  responsible: "Fabian Haas",
   date: "10. September 2026",
   doc,
 )
 
 #ba-section(
   "Gefahren für Mensch und Umwelt",
-  ("W001",),
+  ("W001","W022",),
   (
     "Verletzungsgefahr durch drehendes Bohrwerkzeug und Werkstück",
     "Einzugs- und Quetschgefahr an Spindel, Bohrfutter und Riementrieb",
@@ -62,7 +62,7 @@
 
 #ba-section(
   "Instandhaltung",
-  ("M008",),
+  ("M002",),
   (
     "Instandsetzung nur durch beauftragte und unterwiesene Personen",
     "Bei Wartungs- und Pflegearbeiten Maschine vom Netz trennen bzw. sichern",

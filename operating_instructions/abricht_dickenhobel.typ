@@ -2,14 +2,14 @@
 
 #show: doc => betriebsanweisung(
   subject: "Abricht- und Dickenhobel",
-  responsible: "",
+  responsible: "Fabian Haas",
   date: "10. September 2026",
   doc,
 )
 
 #ba-section(
   "Gefahren für Mensch und Umwelt",
-  ("W001",),
+  ("W024","W088"),
   (
     "Schwere Schnitt- und Amputationsgefahr durch die rotierende Messerwelle",
     "Einzugs- und Quetschgefahr an Messerwelle, Werkstück und Vorschubwalzen",
@@ -61,7 +61,7 @@
 
 #ba-section(
   "Instandhaltung",
-  ("M008",),
+  ("M002",),
   (
     "Wartung, Messerwechsel und Reinigung nur bei stillstehender und gesicherter Maschine durchführen",
     "Messerwelle, Schutzvorrichtungen, Vorschubwalzen und Not-Halt regelmäßig prüfen",

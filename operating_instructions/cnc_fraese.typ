@@ -2,14 +2,14 @@
 
 #show: doc => betriebsanweisung(
   subject: "CNC-Fräse",
-  responsible: "",
+  responsible: "Manuel Knodel",
   date: "10. September 2026",
   doc,
 )
 
 #ba-section(
   "Gefahren für Mensch und Umwelt",
-  ("W001",),
+  ("W024","W018"),
   (
     "Schwere Verletzungsgefahr durch automatisch bewegte Achsen und rotierendes Fräswerkzeug",
     "Werkzeugbruch, herausgeschleuderte Werkstücke und wegfliegende Späne",
@@ -21,7 +21,7 @@
 
 #ba-section(
   "Schutzmaßnahmen und Verhaltensregeln",
-  ("M003", "P028"),
+  ("M003","M004","M002"),
   (
     "Nur unterwiesene Personen dürfen die CNC-Fräse bedienen",
     "Werkstück, Spannmittel und Werkzeug passend zur Bearbeitung auswählen und sicher befestigen",
@@ -60,7 +60,7 @@
 
 #ba-section(
   "Instandhaltung",
-  ("M008",),
+  ("M006",),
   (
     "Werkzeugwechsel, Reinigung und Wartung nur bei stillstehender und gesicherter Maschine durchführen",
     "Not-Halt, Einhausung, Verriegelungen, Absaugung und Spannmittel regelmäßig prüfen",

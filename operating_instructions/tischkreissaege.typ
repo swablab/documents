@@ -2,7 +2,7 @@
 
 #show: doc => betriebsanweisung(
   subject: "Tischkreissäge",
-  responsible: "Daniel Moser",
+  responsible: "Fabian Haas",
   date: "9. September 2026",
   doc,
 )
@@ -21,7 +21,7 @@
 
 #ba-section(
   "Schutzmaßnahmen und Verhaltensregeln",
-  ("M003","M004","P028"),
+  ("M003","M004","M031","P028"),
   (
     "Nur geeignete Kreissägeblätter verwenden",
     "Erforderliche Hilfseinrichtungen bei Bedarf benutzen (Parallelanschlag, Winkelanschlag, Keilschneideeinrichtung, Schiebestock)",
@@ -61,7 +61,7 @@
 
 #ba-section(
   "Instandhaltung",
-  ("M008",),
+  ("M002",),
   (
     "Instandsetzung nur durch beauftragte und unterwiesene Personen",
     "Bei Rüst-, Einstellungs-, Wartungs- und Pflegearbeiten Maschine vom Netz trennen bzw. sichern",
