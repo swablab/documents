@@ -21,33 +21,35 @@
 
 *Bestätigung über Sachzuwendungen*
 
-im Sinne des § 10b des Einkommensteuergesetzes an eine der in § 5 Abs. 1 Nr. 9 des
-Körperschaftsteuergesetzes bezeichneten Körperschaften, Personenvereinigungen
-oder Vermögensmassen.
+#text(size: 0.8em)[
+  im Sinne des § 10b des Einkommensteuergesetzes an eine der in § 5 Abs. 1 Nr. 9 des
+  Körperschaftsteuergesetzes bezeichneten Körperschaften, Personenvereinigungen
+  oder Vermögensmassen.
+]
 
 #table(
   columns: (auto, 1fr, auto),
   fill: (_, row) => if row == 0 { colors.highlight } else { white },
   stroke: 0.1pt + colors.subtext,
-  [*Gesamtbetrag der Zuwendung*],
-  [*- in Buchstaben -*],
+  [*Wert der Zuwendung -in Ziffern-*],
+  [*-in Buchstaben-*],
   [*Tag der Zuwendung*],
   [#str(config.amount).replace(".", ",") EUR],
   [#config.amount_text],
   [#config.date_of_donation],
-  table.cell(colspan: 3)[#config.description],
+  table.cell(colspan: 3)[
+    *Genaue Bezeichnung der Sachzuwendung mit Alter, Zustand, Kaufpreis, Marktwert*\
+    #config.description
+  ],
 )
 
-#text(size: 0.9em)[
+#text(size: 0.8em)[
   #if config.origin == "commercial" [☑] else [☐] Die Sachzuwendung stammt nach den Angaben des Zuwendenden aus dem Betriebsvermögen. Die Zuwendung wurde nach dem Wert der Entnahme (ggf. mit dem niedrigeren gemeinen Wert) und nach der Umsatzsteuer, die auf die Entnahme entfällt, bewertet.\
   #if config.origin == "private" [☑] else [☐] Die Sachzuwendung stammt nach den Angaben des Zuwendenden aus dem Privatvermögen.\
   #if config.origin == "unknown" [☑] else [☐] Der Zuwendende hat trotz Aufforderung keine Angaben zur Herkunft der Sachzuwendung gemacht.\
   #if config.valuation_document_exists [☑] else [☐] Geeignete Unterlagen, die zur Wertermittlung gedient haben, z. B. Rechnung, Gutachten, liegen vor.\
-  ☑ Die Einhaltung der satzungsmäßigen Voraussetzungen nach den §§ 51, 59, 60 und 61 AO wurde vom Finanzamt Freudenstadt, StNr. 42099/46775 mit Bescheid vom 17.12.2020 nach § 60a AO gesondert festgestellt. Wir fördern nach unserer Satzung
-  Volksbildung.
+  ☑ Die Einhaltung der satzungsmäßigen Voraussetzungen nach den §§ 51, 59, 60 und 61 AO wurde vom Finanzamt Freudenstadt, StNr. 42099/46775 mit Bescheid vom 17.12.2020 nach § 60a AO gesondert festgestellt.
 ]
-
-#v(1em)
 
 Es wird bestätigt, dass die Zuwendungen nur zur Förderung der Erziehung, Volks- und Berufsbildung
 einschließlich der Studentenhilfe verwendet wird.
