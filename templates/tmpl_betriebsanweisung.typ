@@ -63,11 +63,11 @@
       ],
       [
         #align(center + horizon)[
-          #text(size: 7pt, weight: "bold")[Verantwortlich]\
+          #text(size: 7pt, weight: "bold")[Ansprechpartner]\
           #v(0.6em)
           #text(size: 7pt, weight: "bold")[für Maschine]\
           #v(0.6em)
-          #box(width: 3cm, height: 0.55cm, fill: luma(94%))[
+          #box(width: 3cm, height: 0.55cm)[
             #align(center + horizon)[#responsible]
           ]
         ]
@@ -88,8 +88,7 @@
         rows: (0.55cm,),
         gutter: 0.15cm,
         align: horizon,
-        [*Freigabe durch Vorstand:*],
-        box(width: 6cm, height: 0.55cm, fill: luma(94%)),
+        [*Freigabe durch Vorstand:*], box(width: 6cm, height: 0.55cm, fill: luma(94%)),
       )
     ],
     [
@@ -99,8 +98,7 @@
           rows: (0.55cm,),
           gutter: 0.15cm,
           align: horizon,
-          [*Stand:*],
-          box(width: 3.2cm, height: 0.55cm, fill: luma(94%))[#date],
+          [*Stand:*], box(width: 3.2cm, height: 0.55cm, fill: luma(94%))[#date],
         )
       ]
     ],

@@ -1,15 +1,15 @@
-#import "../templates/tmpl_betriebsanweisung.typ": betriebsanweisung, ba-section
+#import "../templates/tmpl_betriebsanweisung.typ": ba-section, betriebsanweisung
 
 #show: doc => betriebsanweisung(
   subject: "CNC-Fräse",
   responsible: "Manuel Knodel",
-  date: "10. September 2026",
+  date: "10.09.2026",
   doc,
 )
 
 #ba-section(
   "Gefahren für Mensch und Umwelt",
-  ("W024","W018"),
+  ("W024", "W018"),
   (
     "Schwere Verletzungsgefahr durch automatisch bewegte Achsen und rotierendes Fräswerkzeug",
     "Werkzeugbruch, herausgeschleuderte Werkstücke und wegfliegende Späne",
@@ -21,7 +21,7 @@
 
 #ba-section(
   "Schutzmaßnahmen und Verhaltensregeln",
-  ("M003","M004","M002"),
+  ("M003", "M004", "M002"),
   (
     "Nur unterwiesene Personen dürfen die CNC-Fräse bedienen",
     "Werkstück, Spannmittel und Werkzeug passend zur Bearbeitung auswählen und sicher befestigen",

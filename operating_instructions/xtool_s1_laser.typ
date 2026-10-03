@@ -1,9 +1,9 @@
-#import "../templates/tmpl_betriebsanweisung.typ": betriebsanweisung, ba-section
+#import "../templates/tmpl_betriebsanweisung.typ": ba-section, betriebsanweisung
 
 #show: doc => betriebsanweisung(
   subject: "xTool S1 Laser",
   responsible: "Daniel Moser",
-  date: "10. September 2026",
+  date: "10.09.2026",
   doc,
 )
 
@@ -38,7 +38,7 @@
 
 #ba-section(
   "Materialverbote - niemals lasern",
-  ("W021","W071"),
+  ("W021", "W071"),
   (
     "PVC, Vinyl, Kunstleder und alle chlorhaltigen oder halogenhaltigen Kunststoffe: Es können giftige und korrosive Gase entstehen",
     "PTFE/Teflon, unbekannte Kunststoffe sowie ABS, Polycarbonat und Schaumstoffe ohne ausdrückliche Freigabe des Herstellers",
@@ -78,7 +78,7 @@
 
 #ba-section(
   "Instandhaltung",
-  ("M002","M006"),
+  ("M002", "M006"),
   (
     "Wartung und Reinigung nur durch beauftragte und unterwiesene Personen",
     "Vor Arbeiten Maschine ausschalten, Netzstecker ziehen und gegen Wiedereinschalten sichern",

@@ -1,9 +1,9 @@
-#import "../templates/tmpl_betriebsanweisung.typ": betriebsanweisung, ba-section
+#import "../templates/tmpl_betriebsanweisung.typ": ba-section, betriebsanweisung
 
 #show: doc => betriebsanweisung(
   subject: "Tischkreissäge",
-  responsible: "Fabian Haas",
-  date: "9. September 2026",
+  responsible: "Oliver Butz, Daniel Moser",
+  date: "09.09.2026",
   doc,
 )
 
@@ -21,7 +21,7 @@
 
 #ba-section(
   "Schutzmaßnahmen und Verhaltensregeln",
-  ("M003","M004","M031","P028"),
+  ("M003", "M004", "M031", "P028"),
   (
     "Nur geeignete Kreissägeblätter verwenden",
     "Erforderliche Hilfseinrichtungen bei Bedarf benutzen (Parallelanschlag, Winkelanschlag, Keilschneideeinrichtung, Schiebestock)",

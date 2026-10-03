@@ -1,15 +1,15 @@
-#import "../templates/tmpl_betriebsanweisung.typ": betriebsanweisung, ba-section
+#import "../templates/tmpl_betriebsanweisung.typ": ba-section, betriebsanweisung
 
 #show: doc => betriebsanweisung(
   subject: "Tischbohrmaschine",
-  responsible: "Fabian Haas",
-  date: "10. September 2026",
+  responsible: "Oliver Butz, Daniel Moser",
+  date: "10.09.2026",
   doc,
 )
 
 #ba-section(
   "Gefahren für Mensch und Umwelt",
-  ("W001","W022",),
+  ("W001", "W022"),
   (
     "Verletzungsgefahr durch drehendes Bohrwerkzeug und Werkstück",
     "Einzugs- und Quetschgefahr an Spindel, Bohrfutter und Riementrieb",

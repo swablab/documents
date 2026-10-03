@@ -1,15 +1,15 @@
-#import "../templates/tmpl_betriebsanweisung.typ": betriebsanweisung, ba-section
+#import "../templates/tmpl_betriebsanweisung.typ": ba-section, betriebsanweisung
 
 #show: doc => betriebsanweisung(
   subject: "Abricht- und Dickenhobel",
-  responsible: "Fabian Haas",
-  date: "10. September 2026",
+  responsible: "Oliver Butz",
+  date: "10.09.2026",
   doc,
 )
 
 #ba-section(
   "Gefahren für Mensch und Umwelt",
-  ("W024","W088"),
+  ("W024", "W088"),
   (
     "Schwere Schnitt- und Amputationsgefahr durch die rotierende Messerwelle",
     "Einzugs- und Quetschgefahr an Messerwelle, Werkstück und Vorschubwalzen",
