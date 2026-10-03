@@ -8,14 +8,11 @@
     invoice: "Rechnung",
     offer: "Angebot",
     estimate: "Kostenvoranschlag",
-    internal: "Eigenbeleg",
   ).at(config.type),
   address: config.address,
   info: [
     Datum: #config.date \
-    #if config.type != "internal" [
-      Kunden-Nr.: #config.customer_no \
-    ]
+    Kunden-Nr.: #config.customer_no \
     #if config.type == "invoice" [
       Rechnungs-Nr.: #config.invoice_no \
     ] else if config.type == "offer" [
@@ -25,11 +22,8 @@
   footer: [
     #if config.type == "invoice" [
       Vielen Dank für deine Bestellung! \
-    ] else if config.type == "estimate" or config.type == "offer" [
+    ] else [
       Wir freuen uns auf deine Bestellung! \
-    ] else if config.type == "internal" [
-      *Grund für Eigenbeleg:* \
-      #config.internal_reason
     ]
 
     #text(size: 0.7em, fill: colors.subtext)[
