@@ -10,6 +10,7 @@ COPY . .
 ENV TYPST_FONT_PATHS=.
 RUN apk add --no-cache typst
 RUN wget -O ubuntu.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.ttf &&\
+    wget -O ubuntu-bold.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-700-normal.ttf &&\
     wget -O noto.ttf https://cdn.jsdelivr.net/fontsource/fonts/noto-sans@latest/latin-400-normal.ttf
 RUN typst c 3d-druck-agb.typ &&\
     typst c beitragsordnung.typ &&\

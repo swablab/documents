@@ -63,13 +63,16 @@
       ],
       [
         #align(center + horizon)[
-          #text(size: 7pt, weight: "bold")[Ansprechpartner]\
-          #v(0.6em)
-          #text(size: 7pt, weight: "bold")[für Maschine]\
-          #v(0.6em)
-          #box(width: 3cm, height: 0.55cm)[
-            #align(center + horizon)[#responsible]
-          ]
+          #stack(
+            spacing: 0.1em,
+            text(size: body-size)[Ansprechpartner für],
+            text(size: body-size)[Maschine],
+            v(0.6em),
+            stack(
+              spacing: 0.3em,
+              ..responsible.split(", ").map(name => text(size: body-size, font: ("Arial", "Ubuntu"), weight: "bold")[#name]),
+            ),
+          )
         ]
       ],
     )
