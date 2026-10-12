@@ -3,10 +3,10 @@
 
 #show: doc => tmpl_page(
   title: "Getränkeliste",
-  version: "v1.0",
-  change_date: "16.02.2025",
+  version: "v1.1",
+  change_date: "12.10.2026",
   subtext: [
-    Für jedes Getränk einen Strich, für Wasser einen halben.\
+    Für jedes Getränk einen Strich, für Wasser/ Capri Sun einen halben.\
     Bei mehr als 10 Strichen bitte den Betrag in die Getränkekasse werfen\
     und entsprechend durchstreichen.
   ],
@@ -15,6 +15,6 @@
 
 #table(
   columns: (8em, 1fr),
-  table.header([Name],[Anzahl Getränke]),
-  ..array.range(0,37).map(i => [#v(2em)])
+  table.header([Name], [Anzahl Getränke]),
+  ..array.range(0, 58).map(i => [#v(1em)]),
 )
