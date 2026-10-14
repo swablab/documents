@@ -4,9 +4,9 @@
 #show: doc => tmpl_page(
   title: "Getränkeliste",
   version: "v1.1",
-  change_date: "12.10.2026",
+  change_date: "14.10.2026",
   subtext: [
-    Für jedes Getränk einen Strich, für Wasser/ Capri Sun einen halben.\
+    Für jedes Getränk einen Strich (egal, welche Größe), für Wasser und Capri Sun einen halben.\
     Bei mehr als 10 Strichen bitte den Betrag in die Getränkekasse werfen\
     und entsprechend durchstreichen.
   ],
