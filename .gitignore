@@ -1,4 +1,4 @@
 *.pdf
 *.yml
-*.png
+.Trash-1000
 !.forgejo/**
