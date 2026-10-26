@@ -5,29 +5,20 @@ on:
       - main
   workflow_dispatch:
 
-env:
-  repo: documents
-  git: git.swablab.de
-  url: git.swablab.de/${{ github.repository }}
-  token: ${{ secrets.SWABLAB_ORGA_PACKAGE_TOKEN }}
-
 jobs:
   deploy:
     name: deploy
     runs-on: docker
-    container:
-      image: docker:cli
-      env:
-        DOCKER_HOST: tcp://172.17.0.1:2375
     steps:
-      - name: download
-        run: wget -O- https://${{ env.url }}/archive/main.tar.gz | tar -xz
+      - name: checkout
+        uses: https://data.forgejo.org/actions/checkout@v7
 
-      - name: build
-        run: docker buildx build -f ${{ env.repo }}/Containerfile -t ${{ env.url }}:latest ${{ env.repo }}
+      - name: compile
+        uses: ./.forgejo/typst
 
-      - name: login
-        run: docker login -u token -p ${{ env.token }} ${{ env.git }}
-
-      - name: push
-        run: docker push ${{ env.git }}/${{ github.repository }}:latest
+      - name: upload
+        uses: https://data.forgejo.org/actions/upload-artifact@v7
+        with:
+          name: documents
+          path: "*.pdf"
+          if-no-files-found: error

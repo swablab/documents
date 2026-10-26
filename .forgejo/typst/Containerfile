@@ -1,0 +1,9 @@
+FROM docker.io/library/alpine
+RUN apk add --no-cache typst
+RUN mkdir -p /fonts &&\
+  wget -O /fonts/ubuntu.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.ttf &&\
+  wget -O /fonts/ubuntu-bold.ttf https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-700-normal.ttf &&\
+  wget -O /fonts/noto.ttf https://cdn.jsdelivr.net/fontsource/fonts/noto-sans@latest/latin-400-normal.ttf
+ENV TYPST_FONT_PATHS=/fonts
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]

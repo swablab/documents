@@ -70,7 +70,7 @@
             v(0.6em),
             stack(
               spacing: 0.3em,
-              ..responsible.split(", ").map(name => text(size: body-size, font: ("Arial", "Ubuntu"), weight: "bold")[#name]),
+              ..responsible.split(", ").map(name => text(size: body-size, font: "Ubuntu", weight: "bold")[#name]),
             ),
           )
         ]

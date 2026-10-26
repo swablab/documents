@@ -1,0 +1,5 @@
+name: typst
+description: install fonts and compile typ files
+runs:
+  using: docker
+  image: Containerfile
