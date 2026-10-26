@@ -17,7 +17,7 @@ jobs:
         uses: ./.forgejo/typst
 
       - name: upload
-        uses: https://data.forgejo.org/actions/upload-artifact@v7
+        uses: https://data.forgejo.org/actions/upload-artifact@v4
         with:
           name: documents
           path: "*.pdf"
