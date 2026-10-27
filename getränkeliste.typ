@@ -6,9 +6,9 @@
   version: "v1.1",
   change_date: "14.10.2026",
   subtext: [
-    Für jedes Getränk einen Strich (egal, welche Größe), für Wasser und Capri Sun einen halben.\
-    Bei mehr als 10 Strichen bitte den Betrag in die Getränkekasse werfen\
-    und entsprechend durchstreichen.
+    Wasser und Capri Sun kosten 50ct, alles andere 1€.\
+    Die Flaschengröße ist hierbei nicht relevant.\
+    Ab 10€ bitte den Betrag in die Getränkekasse zurückzahlen.
   ],
   doc,
 )
